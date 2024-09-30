@@ -18,10 +18,10 @@ namespace DataAccess.Context.ApplicationContext
         }
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-           
+
         }
 
-        
+
         public DbSet<User> User { get; set; }
         public DbSet<UserDetail> UserDetail { get; set; }
         public DbSet<UserRole> UserRole { get; set; }
@@ -38,7 +38,7 @@ namespace DataAccess.Context.ApplicationContext
             .HasIndex(u => u.Email) // Benzersiz olmasını istediğiniz property
             .IsUnique(true); // Benzersiz kılma
             modelBuilder.Entity<User>()
-                .HasIndex(u=> u.MobilePhone)
+                .HasIndex(u => u.MobilePhone)
                 .IsUnique(true);
             modelBuilder.Entity<UserDetail>()
                 .HasIndex(ud => ud.IdentityNumber)
@@ -46,7 +46,7 @@ namespace DataAccess.Context.ApplicationContext
             modelBuilder.Entity<UserDetail>()
                 .HasIndex(ud => ud.Email)
                 .IsUnique(true);
-            
+
 
             modelBuilder.Entity<User>()
                 .HasOne(u => u.UserRole)
@@ -57,12 +57,17 @@ namespace DataAccess.Context.ApplicationContext
                 .HasOne(u => u.UserDetail)
                 .WithOne(ud => ud.User)
                 .HasForeignKey<UserDetail>(ud => ud.UserCode);
+            modelBuilder.Entity<Product>()
+                .HasOne(p => p.Category)
+                .WithMany()
+                .HasForeignKey(p => p.CategoryCode);
 
 
-            
             modelBuilder.ApplyConfiguration(new UserDetailSeedData());
             modelBuilder.ApplyConfiguration(new UserRoleSeedData());
             modelBuilder.ApplyConfiguration(new UserSeedData());
+            modelBuilder.ApplyConfiguration(new CategorySeedData());
+            modelBuilder.ApplyConfiguration(new ProductSeedData());
 
             base.OnModelCreating(modelBuilder);
         }
