@@ -1,7 +1,6 @@
 ﻿using DataAccess.SeedData;
 using Entities.Entites.Concrete;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 using System.Collections.Generic;
 using System.Linq;

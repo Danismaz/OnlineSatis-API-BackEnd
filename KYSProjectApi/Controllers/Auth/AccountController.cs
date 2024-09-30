@@ -95,7 +95,7 @@ namespace KYSProjectApi.Controllers.Auth
                     MobilePhone = model.MobilePhone,
                     PasswordSalt = salt,
                     PasswordHash = cryptography.GenerateHash(model.Password, salt),
-                    UserTypeCode = 1
+                    UserRoleCode = 3
                 };
 
                 //Kullanıcı Zaten Kayıtlı mı
@@ -116,8 +116,6 @@ namespace KYSProjectApi.Controllers.Auth
                 if (!isValid)
                     return BadRequest(new { Message = "TC Kimlik numarası doğrulanamadı." });
 
-                await emailService.SendWelcomeEmail(mapper.Map<UserForRegisterModel>(model));
-
                 var resultUser = await userService.AddAsync(userRegister);
                 if (!resultUser)
                     return BadRequest(new { Message = "Kullanıcı eklenemedi. Tekrar Deneyiniz." });
@@ -130,6 +128,8 @@ namespace KYSProjectApi.Controllers.Auth
                 var resultUserDetail = await userDetailService.AddAsync(userRegister);
                 if (!resultUserDetail)
                     return BadRequest(new { Message = "Kullanıcı eklenemedi. Tekrar Deneyiniz." });
+                
+                await emailService.SendWelcomeEmail(mapper.Map<UserForRegisterModel>(model));
 
                 return Ok(new { Message = "Kullanıcı başarılı bir şekilde kayıt edildi. Giriş yapabilirsiniz." });
             }

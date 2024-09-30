@@ -23,6 +23,7 @@ namespace Business.AutoMapper
             .ForMember(dest => dest.PasswordHash, opt => opt.MapFrom(src => src.PasswordHash))
             .ForMember(dest => dest.PasswordSalt, opt => opt.MapFrom(src => src.PasswordSalt))
             .ForMember(dest => dest.MobilePhone, opt => opt.MapFrom(src => src.MobilePhone))
+            .ForMember(dest => dest.UserRoleCode, opt => opt.MapFrom(src => src.UserRoleCode))
             .ReverseMap();
 
             CreateMap<UserForRegisterDto, UserDetail>()

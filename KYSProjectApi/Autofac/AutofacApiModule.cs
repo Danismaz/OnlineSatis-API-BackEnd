@@ -51,7 +51,7 @@ public class AutofacApiModule : Module
         var mappingConfig = new MapperConfiguration(mc =>
         {
             mc.AddProfile(new UserBusinessMapping());
-            mc.AddProfile(new UserUIMapping());
+            mc.AddProfile(new UserUiMapping());
 
 
         });

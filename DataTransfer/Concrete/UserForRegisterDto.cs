@@ -12,9 +12,9 @@ namespace DataTransfer.Concrete
     {
         public string Email { get; set; }
         public Int64 UserCode { get; set; }
+        public Int64 UserRoleCode { get; set; }
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
-        public Int64 UserTypeCode { get; set; }
         public string MobilePhone { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }

@@ -24,7 +24,8 @@ namespace DataAccess.SeedData
                     MobilePhone = "+905551234567",
                     PasswordHash = hash,
                     PasswordSalt = salt,
-                    UserRoleCode = 1
+                    UserRoleCode = 1,
+                    TwoFactorEnabled = false
 
                 },
                 new User
@@ -34,7 +35,8 @@ namespace DataAccess.SeedData
                     MobilePhone = "+905551234568",
                     PasswordHash = hash,
                     PasswordSalt = salt,
-                    UserRoleCode = 2
+                    UserRoleCode = 2,
+                    TwoFactorEnabled = false
 
                 },
                 new User
@@ -53,7 +55,8 @@ namespace DataAccess.SeedData
                     MobilePhone = "+905551234570",
                     PasswordHash = hash,
                     PasswordSalt = salt,
-                    UserRoleCode = 3
+                    UserRoleCode = 3,
+                    TwoFactorEnabled = false
                 },
                 new User
                 {
@@ -62,7 +65,8 @@ namespace DataAccess.SeedData
                     MobilePhone = "+905551234571",
                     PasswordHash = hash,
                     PasswordSalt = salt,
-                    UserRoleCode = 3
+                    UserRoleCode = 3,
+                    TwoFactorEnabled = false
                 }
             );
         }

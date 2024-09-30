@@ -13,19 +13,12 @@ using DataAccess.Context.ApplicationContext;
 
 namespace DataAccess.Repositories.Concrete
 {
-    public class BaseRepository<T> : IBaseRepository<T>
+    public class BaseRepository<T>(AppDbContext context) : IBaseRepository<T>
         where T : BaseEntity, new()
     {
-        private readonly AppDbContext _context;
-        private readonly DbSet<T> _table;
+        private readonly DbSet<T> _table = context.Set<T>();
 
-        public BaseRepository(AppDbContext context)
-        {
-            _context = context;
-            _table = context.Set<T>();
-        }
-
-        public async Task<bool> SaveAsync() => await _context.SaveChangesAsync() > 0 ? true : false;
+        public async Task<bool> SaveAsync() => await context.SaveChangesAsync() > 0 ? true : false;
 
         public async Task<bool> AddAsync(T entity)
         {

@@ -8,7 +8,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace DataAccess.Context.ApplicationContext.Migrations
+namespace DataAccess.Context.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     partial class AppDbContextModelSnapshot : ModelSnapshot
@@ -81,11 +81,11 @@ namespace DataAccess.Context.ApplicationContext.Migrations
                         new
                         {
                             UserCode = 101L,
-                            CreatedDate = new DateTime(2024, 9, 30, 13, 30, 1, 772, DateTimeKind.Local).AddTicks(8640),
+                            CreatedDate = new DateTime(2024, 9, 30, 15, 9, 35, 790, DateTimeKind.Local).AddTicks(7100),
                             Email = "john.doe@example.com",
                             MobilePhone = "+905551234567",
-                            PasswordHash = new byte[] { 241, 26, 98, 132, 177, 65, 254, 61, 25, 131, 85, 79, 40, 122, 234, 237, 142, 10, 30, 101, 190, 12, 35, 90, 63, 70, 13, 177, 206, 204, 24, 68, 41, 225, 36, 131, 180, 179, 254, 70, 79, 13, 121, 152, 160, 118, 123, 170, 130, 200, 190, 108, 114, 174, 223, 250, 122, 207, 7, 128, 128, 156, 55, 111 },
-                            PasswordSalt = new byte[] { 190, 156, 148, 79, 171, 228, 165, 58, 137, 240, 49, 187, 64, 215, 87, 11 },
+                            PasswordHash = new byte[] { 93, 119, 217, 228, 66, 166, 110, 147, 22, 37, 105, 18, 125, 46, 217, 137, 229, 173, 114, 206, 20, 222, 56, 222, 0, 194, 8, 202, 3, 65, 113, 244, 244, 16, 126, 243, 224, 42, 245, 175, 8, 194, 202, 72, 157, 180, 172, 86, 31, 157, 83, 107, 45, 178, 191, 53, 192, 226, 172, 51, 158, 172, 133, 120 },
+                            PasswordSalt = new byte[] { 147, 188, 45, 157, 211, 184, 252, 52, 177, 15, 182, 106, 196, 37, 117, 227 },
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserRoleCode = 1L
@@ -93,11 +93,11 @@ namespace DataAccess.Context.ApplicationContext.Migrations
                         new
                         {
                             UserCode = 102L,
-                            CreatedDate = new DateTime(2024, 9, 30, 13, 30, 1, 772, DateTimeKind.Local).AddTicks(8650),
+                            CreatedDate = new DateTime(2024, 9, 30, 15, 9, 35, 790, DateTimeKind.Local).AddTicks(7110),
                             Email = "jane.doe@example.com",
                             MobilePhone = "+905551234568",
-                            PasswordHash = new byte[] { 241, 26, 98, 132, 177, 65, 254, 61, 25, 131, 85, 79, 40, 122, 234, 237, 142, 10, 30, 101, 190, 12, 35, 90, 63, 70, 13, 177, 206, 204, 24, 68, 41, 225, 36, 131, 180, 179, 254, 70, 79, 13, 121, 152, 160, 118, 123, 170, 130, 200, 190, 108, 114, 174, 223, 250, 122, 207, 7, 128, 128, 156, 55, 111 },
-                            PasswordSalt = new byte[] { 190, 156, 148, 79, 171, 228, 165, 58, 137, 240, 49, 187, 64, 215, 87, 11 },
+                            PasswordHash = new byte[] { 93, 119, 217, 228, 66, 166, 110, 147, 22, 37, 105, 18, 125, 46, 217, 137, 229, 173, 114, 206, 20, 222, 56, 222, 0, 194, 8, 202, 3, 65, 113, 244, 244, 16, 126, 243, 224, 42, 245, 175, 8, 194, 202, 72, 157, 180, 172, 86, 31, 157, 83, 107, 45, 178, 191, 53, 192, 226, 172, 51, 158, 172, 133, 120 },
+                            PasswordSalt = new byte[] { 147, 188, 45, 157, 211, 184, 252, 52, 177, 15, 182, 106, 196, 37, 117, 227 },
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserRoleCode = 2L
@@ -105,11 +105,11 @@ namespace DataAccess.Context.ApplicationContext.Migrations
                         new
                         {
                             UserCode = 103L,
-                            CreatedDate = new DateTime(2024, 9, 30, 13, 30, 1, 772, DateTimeKind.Local).AddTicks(8650),
+                            CreatedDate = new DateTime(2024, 9, 30, 15, 9, 35, 790, DateTimeKind.Local).AddTicks(7110),
                             Email = "alice.smith@example.com",
                             MobilePhone = "+905551234569",
-                            PasswordHash = new byte[] { 241, 26, 98, 132, 177, 65, 254, 61, 25, 131, 85, 79, 40, 122, 234, 237, 142, 10, 30, 101, 190, 12, 35, 90, 63, 70, 13, 177, 206, 204, 24, 68, 41, 225, 36, 131, 180, 179, 254, 70, 79, 13, 121, 152, 160, 118, 123, 170, 130, 200, 190, 108, 114, 174, 223, 250, 122, 207, 7, 128, 128, 156, 55, 111 },
-                            PasswordSalt = new byte[] { 190, 156, 148, 79, 171, 228, 165, 58, 137, 240, 49, 187, 64, 215, 87, 11 },
+                            PasswordHash = new byte[] { 93, 119, 217, 228, 66, 166, 110, 147, 22, 37, 105, 18, 125, 46, 217, 137, 229, 173, 114, 206, 20, 222, 56, 222, 0, 194, 8, 202, 3, 65, 113, 244, 244, 16, 126, 243, 224, 42, 245, 175, 8, 194, 202, 72, 157, 180, 172, 86, 31, 157, 83, 107, 45, 178, 191, 53, 192, 226, 172, 51, 158, 172, 133, 120 },
+                            PasswordSalt = new byte[] { 147, 188, 45, 157, 211, 184, 252, 52, 177, 15, 182, 106, 196, 37, 117, 227 },
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserRoleCode = 3L
@@ -117,11 +117,11 @@ namespace DataAccess.Context.ApplicationContext.Migrations
                         new
                         {
                             UserCode = 104L,
-                            CreatedDate = new DateTime(2024, 9, 30, 13, 30, 1, 772, DateTimeKind.Local).AddTicks(8660),
+                            CreatedDate = new DateTime(2024, 9, 30, 15, 9, 35, 790, DateTimeKind.Local).AddTicks(7110),
                             Email = "bob.johnson@example.com",
                             MobilePhone = "+905551234570",
-                            PasswordHash = new byte[] { 241, 26, 98, 132, 177, 65, 254, 61, 25, 131, 85, 79, 40, 122, 234, 237, 142, 10, 30, 101, 190, 12, 35, 90, 63, 70, 13, 177, 206, 204, 24, 68, 41, 225, 36, 131, 180, 179, 254, 70, 79, 13, 121, 152, 160, 118, 123, 170, 130, 200, 190, 108, 114, 174, 223, 250, 122, 207, 7, 128, 128, 156, 55, 111 },
-                            PasswordSalt = new byte[] { 190, 156, 148, 79, 171, 228, 165, 58, 137, 240, 49, 187, 64, 215, 87, 11 },
+                            PasswordHash = new byte[] { 93, 119, 217, 228, 66, 166, 110, 147, 22, 37, 105, 18, 125, 46, 217, 137, 229, 173, 114, 206, 20, 222, 56, 222, 0, 194, 8, 202, 3, 65, 113, 244, 244, 16, 126, 243, 224, 42, 245, 175, 8, 194, 202, 72, 157, 180, 172, 86, 31, 157, 83, 107, 45, 178, 191, 53, 192, 226, 172, 51, 158, 172, 133, 120 },
+                            PasswordSalt = new byte[] { 147, 188, 45, 157, 211, 184, 252, 52, 177, 15, 182, 106, 196, 37, 117, 227 },
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserRoleCode = 3L
@@ -129,11 +129,11 @@ namespace DataAccess.Context.ApplicationContext.Migrations
                         new
                         {
                             UserCode = 105L,
-                            CreatedDate = new DateTime(2024, 9, 30, 13, 30, 1, 772, DateTimeKind.Local).AddTicks(8660),
+                            CreatedDate = new DateTime(2024, 9, 30, 15, 9, 35, 790, DateTimeKind.Local).AddTicks(7110),
                             Email = "carol.davis@example.com",
                             MobilePhone = "+905551234571",
-                            PasswordHash = new byte[] { 241, 26, 98, 132, 177, 65, 254, 61, 25, 131, 85, 79, 40, 122, 234, 237, 142, 10, 30, 101, 190, 12, 35, 90, 63, 70, 13, 177, 206, 204, 24, 68, 41, 225, 36, 131, 180, 179, 254, 70, 79, 13, 121, 152, 160, 118, 123, 170, 130, 200, 190, 108, 114, 174, 223, 250, 122, 207, 7, 128, 128, 156, 55, 111 },
-                            PasswordSalt = new byte[] { 190, 156, 148, 79, 171, 228, 165, 58, 137, 240, 49, 187, 64, 215, 87, 11 },
+                            PasswordHash = new byte[] { 93, 119, 217, 228, 66, 166, 110, 147, 22, 37, 105, 18, 125, 46, 217, 137, 229, 173, 114, 206, 20, 222, 56, 222, 0, 194, 8, 202, 3, 65, 113, 244, 244, 16, 126, 243, 224, 42, 245, 175, 8, 194, 202, 72, 157, 180, 172, 86, 31, 157, 83, 107, 45, 178, 191, 53, 192, 226, 172, 51, 158, 172, 133, 120 },
+                            PasswordSalt = new byte[] { 147, 188, 45, 157, 211, 184, 252, 52, 177, 15, 182, 106, 196, 37, 117, 227 },
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserRoleCode = 3L
@@ -208,7 +208,7 @@ namespace DataAccess.Context.ApplicationContext.Migrations
                         {
                             UserDetailCode = 1L,
                             BirthDate = new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2024, 9, 30, 13, 30, 1, 772, DateTimeKind.Local).AddTicks(7570),
+                            CreatedDate = new DateTime(2024, 9, 30, 15, 9, 35, 790, DateTimeKind.Local).AddTicks(6320),
                             Email = "ahmet.yilmaz@kirtasiyemerkezi.com",
                             IdentityNumber = "98765432101",
                             MobilePhone = "+905551234567",
@@ -221,7 +221,7 @@ namespace DataAccess.Context.ApplicationContext.Migrations
                         {
                             UserDetailCode = 2L,
                             BirthDate = new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2024, 9, 30, 13, 30, 1, 772, DateTimeKind.Local).AddTicks(7610),
+                            CreatedDate = new DateTime(2024, 9, 30, 15, 9, 35, 790, DateTimeKind.Local).AddTicks(6350),
                             Email = "mehmet.demir@ofismalzemeleri.com",
                             IdentityNumber = "98765432102",
                             MobilePhone = "+905551234568",
@@ -234,7 +234,7 @@ namespace DataAccess.Context.ApplicationContext.Migrations
                         {
                             UserDetailCode = 3L,
                             BirthDate = new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2024, 9, 30, 13, 30, 1, 772, DateTimeKind.Local).AddTicks(7610),
+                            CreatedDate = new DateTime(2024, 9, 30, 15, 9, 35, 790, DateTimeKind.Local).AddTicks(6350),
                             Email = "ayse.kaya@kirtasiyedunyasi.com",
                             IdentityNumber = "98765432103",
                             MobilePhone = "+905551234569",
@@ -247,7 +247,7 @@ namespace DataAccess.Context.ApplicationContext.Migrations
                         {
                             UserDetailCode = 4L,
                             BirthDate = new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2024, 9, 30, 13, 30, 1, 772, DateTimeKind.Local).AddTicks(7620),
+                            CreatedDate = new DateTime(2024, 9, 30, 15, 9, 35, 790, DateTimeKind.Local).AddTicks(6360),
                             Email = "ali.celik@ofismerkezi.com",
                             IdentityNumber = "98765432104",
                             MobilePhone = "+905551234570",
@@ -260,7 +260,7 @@ namespace DataAccess.Context.ApplicationContext.Migrations
                         {
                             UserDetailCode = 5L,
                             BirthDate = new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2024, 9, 30, 13, 30, 1, 772, DateTimeKind.Local).AddTicks(7620),
+                            CreatedDate = new DateTime(2024, 9, 30, 15, 9, 35, 790, DateTimeKind.Local).AddTicks(6360),
                             Email = "fatma.yurt@kirtasiyevi.com",
                             IdentityNumber = "98765432105",
                             MobilePhone = "+905551234571",
@@ -308,21 +308,21 @@ namespace DataAccess.Context.ApplicationContext.Migrations
                         new
                         {
                             UserRoleCode = 1L,
-                            CreatedDate = new DateTime(2024, 9, 30, 13, 30, 1, 772, DateTimeKind.Local).AddTicks(7770),
+                            CreatedDate = new DateTime(2024, 9, 30, 15, 9, 35, 790, DateTimeKind.Local).AddTicks(6460),
                             RoleDescription = "Admin",
                             Status = 1
                         },
                         new
                         {
                             UserRoleCode = 2L,
-                            CreatedDate = new DateTime(2024, 9, 30, 13, 30, 1, 772, DateTimeKind.Local).AddTicks(7780),
+                            CreatedDate = new DateTime(2024, 9, 30, 15, 9, 35, 790, DateTimeKind.Local).AddTicks(6460),
                             RoleDescription = "Yönetici",
                             Status = 1
                         },
                         new
                         {
                             UserRoleCode = 3L,
-                            CreatedDate = new DateTime(2024, 9, 30, 13, 30, 1, 772, DateTimeKind.Local).AddTicks(7780),
+                            CreatedDate = new DateTime(2024, 9, 30, 15, 9, 35, 790, DateTimeKind.Local).AddTicks(6460),
                             RoleDescription = "Kullanici",
                             Status = 1
                         });

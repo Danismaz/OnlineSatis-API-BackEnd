@@ -4,11 +4,12 @@ using KYSProjectApi.Models;
 
 namespace KYSProjectApi.AutoMapper
 {
-    public class UserUIMapping : Profile
+    public class UserUiMapping : Profile
     {
-        public UserUIMapping()
+        public UserUiMapping()
         {
             CreateMap<LoginDto,LoginVm>().ReverseMap();
+            CreateMap<UserForRegisterVm,UserForRegisterDto>().ReverseMap();
             CreateMap<UserForRegisterVm,UserForRegisterModel>().ReverseMap();
             CreateMap<UserForChangePasswordDto, UserForChangePasswordVm>().ReverseMap();
 

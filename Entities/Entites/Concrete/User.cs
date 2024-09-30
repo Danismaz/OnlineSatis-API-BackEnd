@@ -30,7 +30,7 @@ namespace Entities.Entites.Concrete
         [Required]
         public byte[] PasswordSalt { get; set; }
 
-        public bool TwoFactorEnabled { get; set; } = false; // İki faktörlü doğrulama tercihi
+        [Required] public bool TwoFactorEnabled { get; set; } = false;
 
         public UserRole UserRole { get; set; }
         public UserDetail UserDetail { get; set; }
