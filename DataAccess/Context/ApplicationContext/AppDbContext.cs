@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Entities.Concrete;
 
 namespace DataAccess.Context.ApplicationContext
 {
@@ -24,6 +25,11 @@ namespace DataAccess.Context.ApplicationContext
         public DbSet<User> User { get; set; }
         public DbSet<UserDetail> UserDetail { get; set; }
         public DbSet<UserRole> UserRole { get; set; }
+        public DbSet<Category> Category { get; set; }
+        public DbSet<Order> Order { get; set; }
+        public DbSet<OrderDetail> OrderDetail { get; set; }
+        public DbSet<Product> Product { get; set; }
+        public DbSet<Shipper> Shipper { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
