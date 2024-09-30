@@ -3,20 +3,17 @@ using System;
 using DataAccess.Context.ApplicationContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace DataAccess.Context.Migrations
+namespace DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240930124335_AddedTables")]
-    partial class AddedTables
+    partial class AppDbContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -56,6 +53,48 @@ namespace DataAccess.Context.Migrations
                     b.HasKey("CategoryCode");
 
                     b.ToTable("Category");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoryCode = 1L,
+                            CategoryDescription = "Farklı türde kalemler.",
+                            CategoryName = "Kalemler",
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4361),
+                            Status = 1
+                        },
+                        new
+                        {
+                            CategoryCode = 2L,
+                            CategoryDescription = "Çeşitli defter türleri.",
+                            CategoryName = "Defterler",
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4363),
+                            Status = 1
+                        },
+                        new
+                        {
+                            CategoryCode = 3L,
+                            CategoryDescription = "Ofis için gerekli malzemeler.",
+                            CategoryName = "Ofis Malzemeleri",
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4364),
+                            Status = 1
+                        },
+                        new
+                        {
+                            CategoryCode = 4L,
+                            CategoryDescription = "Resim ve sanat malzemeleri.",
+                            CategoryName = "Sanat Malzemeleri",
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4365),
+                            Status = 1
+                        },
+                        new
+                        {
+                            CategoryCode = 5L,
+                            CategoryDescription = "Farklı tür yapıştırıcılar.",
+                            CategoryName = "Yapıştırıcılar",
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4366),
+                            Status = 1
+                        });
                 });
 
             modelBuilder.Entity("Entities.Concrete.Order", b =>
@@ -181,6 +220,258 @@ namespace DataAccess.Context.Migrations
                     b.HasIndex("ShipperCode");
 
                     b.ToTable("Product");
+
+                    b.HasData(
+                        new
+                        {
+                            ProductCode = 1L,
+                            CategoryCode = 1L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4456),
+                            ProductName = "Kurşun Kalem",
+                            ProductPrice = 40m,
+                            Status = 1,
+                            Stock = 100
+                        },
+                        new
+                        {
+                            ProductCode = 2L,
+                            CategoryCode = 1L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4463),
+                            ProductName = "Mavi Renkli Kalem",
+                            ProductPrice = 80m,
+                            Status = 1,
+                            Stock = 80
+                        },
+                        new
+                        {
+                            ProductCode = 3L,
+                            CategoryCode = 1L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4464),
+                            ProductName = "Kırmızı Jel Kalem",
+                            ProductPrice = 90m,
+                            Status = 1,
+                            Stock = 60
+                        },
+                        new
+                        {
+                            ProductCode = 4L,
+                            CategoryCode = 1L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4465),
+                            ProductName = "Siyah Mürekkep Kalem",
+                            ProductPrice = 100m,
+                            Status = 1,
+                            Stock = 40
+                        },
+                        new
+                        {
+                            ProductCode = 5L,
+                            CategoryCode = 1L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4466),
+                            ProductName = "Renkli Silgi",
+                            ProductPrice = 25m,
+                            Status = 1,
+                            Stock = 120
+                        },
+                        new
+                        {
+                            ProductCode = 6L,
+                            CategoryCode = 2L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4467),
+                            ProductName = "A5 Kırmızı Defter",
+                            ProductPrice = 150m,
+                            Status = 1,
+                            Stock = 200
+                        },
+                        new
+                        {
+                            ProductCode = 7L,
+                            CategoryCode = 2L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4468),
+                            ProductName = "A4 Beyaz Defter",
+                            ProductPrice = 85m,
+                            Status = 1,
+                            Stock = 150
+                        },
+                        new
+                        {
+                            ProductCode = 8L,
+                            CategoryCode = 2L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4469),
+                            ProductName = "Kareli Defter",
+                            ProductPrice = 120m,
+                            Status = 1,
+                            Stock = 100
+                        },
+                        new
+                        {
+                            ProductCode = 9L,
+                            CategoryCode = 2L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4470),
+                            ProductName = "Çizgili Defter",
+                            ProductPrice = 120m,
+                            Status = 1,
+                            Stock = 90
+                        },
+                        new
+                        {
+                            ProductCode = 10L,
+                            CategoryCode = 2L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4471),
+                            ProductName = "Sert Kapaklı Defter",
+                            ProductPrice = 160m,
+                            Status = 1,
+                            Stock = 50
+                        },
+                        new
+                        {
+                            ProductCode = 11L,
+                            CategoryCode = 3L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4473),
+                            ProductName = "Zımba Makinesi",
+                            ProductPrice = 90m,
+                            Status = 1,
+                            Stock = 30
+                        },
+                        new
+                        {
+                            ProductCode = 12L,
+                            CategoryCode = 3L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4474),
+                            ProductName = "Bant Dispenseri",
+                            ProductPrice = 45m,
+                            Status = 1,
+                            Stock = 70
+                        },
+                        new
+                        {
+                            ProductCode = 13L,
+                            CategoryCode = 3L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4475),
+                            ProductName = "Makas",
+                            ProductPrice = 55m,
+                            Status = 1,
+                            Stock = 40
+                        },
+                        new
+                        {
+                            ProductCode = 14L,
+                            CategoryCode = 3L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4476),
+                            ProductName = "Post-it Notlar",
+                            ProductPrice = 75m,
+                            Status = 1,
+                            Stock = 200
+                        },
+                        new
+                        {
+                            ProductCode = 15L,
+                            CategoryCode = 3L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4477),
+                            ProductName = "Kalemtraş",
+                            ProductPrice = 20m,
+                            Status = 1,
+                            Stock = 100
+                        },
+                        new
+                        {
+                            ProductCode = 16L,
+                            CategoryCode = 4L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4478),
+                            ProductName = "Akrilik Boya Seti",
+                            ProductPrice = 165m,
+                            Status = 1,
+                            Stock = 20
+                        },
+                        new
+                        {
+                            ProductCode = 17L,
+                            CategoryCode = 4L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4479),
+                            ProductName = "Su Renkleri Seti",
+                            ProductPrice = 145m,
+                            Status = 1,
+                            Stock = 30
+                        },
+                        new
+                        {
+                            ProductCode = 18L,
+                            CategoryCode = 4L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4480),
+                            ProductName = "Fırça Seti",
+                            ProductPrice = 110m,
+                            Status = 1,
+                            Stock = 25
+                        },
+                        new
+                        {
+                            ProductCode = 19L,
+                            CategoryCode = 4L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4481),
+                            ProductName = "Çizim Defteri",
+                            ProductPrice = 85m,
+                            Status = 1,
+                            Stock = 40
+                        },
+                        new
+                        {
+                            ProductCode = 20L,
+                            CategoryCode = 4L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4482),
+                            ProductName = "Sanat Paleti",
+                            ProductPrice = 55m,
+                            Status = 1,
+                            Stock = 50
+                        },
+                        new
+                        {
+                            ProductCode = 21L,
+                            CategoryCode = 5L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4484),
+                            ProductName = "Sıvı Yapıştırıcı",
+                            ProductPrice = 35m,
+                            Status = 1,
+                            Stock = 60
+                        },
+                        new
+                        {
+                            ProductCode = 22L,
+                            CategoryCode = 5L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4485),
+                            ProductName = "Bantlı Yapıştırıcı",
+                            ProductPrice = 30m,
+                            Status = 1,
+                            Stock = 90
+                        },
+                        new
+                        {
+                            ProductCode = 23L,
+                            CategoryCode = 5L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4486),
+                            ProductName = "Hot Melt Yapıştırıcı",
+                            ProductPrice = 80m,
+                            Status = 1,
+                            Stock = 30
+                        },
+                        new
+                        {
+                            ProductCode = 24L,
+                            CategoryCode = 5L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4487),
+                            ProductName = "Yapıştırıcı Stik",
+                            ProductPrice = 75m,
+                            Status = 1,
+                            Stock = 120
+                        },
+                        new
+                        {
+                            ProductCode = 25L,
+                            CategoryCode = 5L,
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4488),
+                            ProductName = "Modeller İçin Yapıştırıcı",
+                            ProductPrice = 55m,
+                            Status = 1,
+                            Stock = 40
+                        });
                 });
 
             modelBuilder.Entity("Entities.Concrete.Shipper", b =>
@@ -279,11 +570,11 @@ namespace DataAccess.Context.Migrations
                         new
                         {
                             UserCode = 101L,
-                            CreatedDate = new DateTime(2024, 9, 30, 15, 43, 35, 296, DateTimeKind.Local).AddTicks(1580),
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4122),
                             Email = "john.doe@example.com",
                             MobilePhone = "+905551234567",
-                            PasswordHash = new byte[] { 59, 83, 1, 234, 98, 155, 251, 6, 38, 28, 169, 219, 41, 110, 166, 66, 91, 153, 203, 90, 74, 201, 165, 248, 42, 18, 215, 122, 141, 79, 107, 87, 241, 172, 195, 121, 181, 84, 77, 41, 33, 5, 212, 161, 119, 235, 147, 88, 180, 84, 255, 134, 84, 56, 116, 245, 153, 161, 210, 119, 96, 38, 9, 229 },
-                            PasswordSalt = new byte[] { 51, 64, 7, 22, 84, 123, 66, 147, 250, 214, 176, 75, 104, 67, 104, 137 },
+                            PasswordHash = new byte[] { 203, 245, 125, 216, 48, 215, 206, 163, 22, 181, 122, 102, 51, 28, 9, 190, 16, 236, 240, 1, 202, 54, 86, 216, 180, 105, 116, 205, 87, 236, 244, 246, 151, 9, 243, 97, 241, 221, 173, 34, 153, 33, 95, 111, 183, 94, 250, 182, 143, 107, 117, 123, 154, 128, 252, 155, 156, 0, 3, 133, 12, 74, 223, 15 },
+                            PasswordSalt = new byte[] { 155, 140, 238, 112, 77, 92, 169, 94, 4, 92, 95, 249, 125, 0, 254, 120 },
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserRoleCode = 1L
@@ -291,11 +582,11 @@ namespace DataAccess.Context.Migrations
                         new
                         {
                             UserCode = 102L,
-                            CreatedDate = new DateTime(2024, 9, 30, 15, 43, 35, 296, DateTimeKind.Local).AddTicks(1580),
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4133),
                             Email = "jane.doe@example.com",
                             MobilePhone = "+905551234568",
-                            PasswordHash = new byte[] { 59, 83, 1, 234, 98, 155, 251, 6, 38, 28, 169, 219, 41, 110, 166, 66, 91, 153, 203, 90, 74, 201, 165, 248, 42, 18, 215, 122, 141, 79, 107, 87, 241, 172, 195, 121, 181, 84, 77, 41, 33, 5, 212, 161, 119, 235, 147, 88, 180, 84, 255, 134, 84, 56, 116, 245, 153, 161, 210, 119, 96, 38, 9, 229 },
-                            PasswordSalt = new byte[] { 51, 64, 7, 22, 84, 123, 66, 147, 250, 214, 176, 75, 104, 67, 104, 137 },
+                            PasswordHash = new byte[] { 203, 245, 125, 216, 48, 215, 206, 163, 22, 181, 122, 102, 51, 28, 9, 190, 16, 236, 240, 1, 202, 54, 86, 216, 180, 105, 116, 205, 87, 236, 244, 246, 151, 9, 243, 97, 241, 221, 173, 34, 153, 33, 95, 111, 183, 94, 250, 182, 143, 107, 117, 123, 154, 128, 252, 155, 156, 0, 3, 133, 12, 74, 223, 15 },
+                            PasswordSalt = new byte[] { 155, 140, 238, 112, 77, 92, 169, 94, 4, 92, 95, 249, 125, 0, 254, 120 },
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserRoleCode = 2L
@@ -303,11 +594,11 @@ namespace DataAccess.Context.Migrations
                         new
                         {
                             UserCode = 103L,
-                            CreatedDate = new DateTime(2024, 9, 30, 15, 43, 35, 296, DateTimeKind.Local).AddTicks(1580),
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4135),
                             Email = "alice.smith@example.com",
                             MobilePhone = "+905551234569",
-                            PasswordHash = new byte[] { 59, 83, 1, 234, 98, 155, 251, 6, 38, 28, 169, 219, 41, 110, 166, 66, 91, 153, 203, 90, 74, 201, 165, 248, 42, 18, 215, 122, 141, 79, 107, 87, 241, 172, 195, 121, 181, 84, 77, 41, 33, 5, 212, 161, 119, 235, 147, 88, 180, 84, 255, 134, 84, 56, 116, 245, 153, 161, 210, 119, 96, 38, 9, 229 },
-                            PasswordSalt = new byte[] { 51, 64, 7, 22, 84, 123, 66, 147, 250, 214, 176, 75, 104, 67, 104, 137 },
+                            PasswordHash = new byte[] { 203, 245, 125, 216, 48, 215, 206, 163, 22, 181, 122, 102, 51, 28, 9, 190, 16, 236, 240, 1, 202, 54, 86, 216, 180, 105, 116, 205, 87, 236, 244, 246, 151, 9, 243, 97, 241, 221, 173, 34, 153, 33, 95, 111, 183, 94, 250, 182, 143, 107, 117, 123, 154, 128, 252, 155, 156, 0, 3, 133, 12, 74, 223, 15 },
+                            PasswordSalt = new byte[] { 155, 140, 238, 112, 77, 92, 169, 94, 4, 92, 95, 249, 125, 0, 254, 120 },
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserRoleCode = 3L
@@ -315,11 +606,11 @@ namespace DataAccess.Context.Migrations
                         new
                         {
                             UserCode = 104L,
-                            CreatedDate = new DateTime(2024, 9, 30, 15, 43, 35, 296, DateTimeKind.Local).AddTicks(1580),
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4136),
                             Email = "bob.johnson@example.com",
                             MobilePhone = "+905551234570",
-                            PasswordHash = new byte[] { 59, 83, 1, 234, 98, 155, 251, 6, 38, 28, 169, 219, 41, 110, 166, 66, 91, 153, 203, 90, 74, 201, 165, 248, 42, 18, 215, 122, 141, 79, 107, 87, 241, 172, 195, 121, 181, 84, 77, 41, 33, 5, 212, 161, 119, 235, 147, 88, 180, 84, 255, 134, 84, 56, 116, 245, 153, 161, 210, 119, 96, 38, 9, 229 },
-                            PasswordSalt = new byte[] { 51, 64, 7, 22, 84, 123, 66, 147, 250, 214, 176, 75, 104, 67, 104, 137 },
+                            PasswordHash = new byte[] { 203, 245, 125, 216, 48, 215, 206, 163, 22, 181, 122, 102, 51, 28, 9, 190, 16, 236, 240, 1, 202, 54, 86, 216, 180, 105, 116, 205, 87, 236, 244, 246, 151, 9, 243, 97, 241, 221, 173, 34, 153, 33, 95, 111, 183, 94, 250, 182, 143, 107, 117, 123, 154, 128, 252, 155, 156, 0, 3, 133, 12, 74, 223, 15 },
+                            PasswordSalt = new byte[] { 155, 140, 238, 112, 77, 92, 169, 94, 4, 92, 95, 249, 125, 0, 254, 120 },
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserRoleCode = 3L
@@ -327,11 +618,11 @@ namespace DataAccess.Context.Migrations
                         new
                         {
                             UserCode = 105L,
-                            CreatedDate = new DateTime(2024, 9, 30, 15, 43, 35, 296, DateTimeKind.Local).AddTicks(1590),
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4137),
                             Email = "carol.davis@example.com",
                             MobilePhone = "+905551234571",
-                            PasswordHash = new byte[] { 59, 83, 1, 234, 98, 155, 251, 6, 38, 28, 169, 219, 41, 110, 166, 66, 91, 153, 203, 90, 74, 201, 165, 248, 42, 18, 215, 122, 141, 79, 107, 87, 241, 172, 195, 121, 181, 84, 77, 41, 33, 5, 212, 161, 119, 235, 147, 88, 180, 84, 255, 134, 84, 56, 116, 245, 153, 161, 210, 119, 96, 38, 9, 229 },
-                            PasswordSalt = new byte[] { 51, 64, 7, 22, 84, 123, 66, 147, 250, 214, 176, 75, 104, 67, 104, 137 },
+                            PasswordHash = new byte[] { 203, 245, 125, 216, 48, 215, 206, 163, 22, 181, 122, 102, 51, 28, 9, 190, 16, 236, 240, 1, 202, 54, 86, 216, 180, 105, 116, 205, 87, 236, 244, 246, 151, 9, 243, 97, 241, 221, 173, 34, 153, 33, 95, 111, 183, 94, 250, 182, 143, 107, 117, 123, 154, 128, 252, 155, 156, 0, 3, 133, 12, 74, 223, 15 },
+                            PasswordSalt = new byte[] { 155, 140, 238, 112, 77, 92, 169, 94, 4, 92, 95, 249, 125, 0, 254, 120 },
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserRoleCode = 3L
@@ -406,7 +697,7 @@ namespace DataAccess.Context.Migrations
                         {
                             UserDetailCode = 1L,
                             BirthDate = new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2024, 9, 30, 15, 43, 35, 296, DateTimeKind.Local).AddTicks(900),
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 396, DateTimeKind.Local).AddTicks(3841),
                             Email = "ahmet.yilmaz@kirtasiyemerkezi.com",
                             IdentityNumber = "98765432101",
                             MobilePhone = "+905551234567",
@@ -419,7 +710,7 @@ namespace DataAccess.Context.Migrations
                         {
                             UserDetailCode = 2L,
                             BirthDate = new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2024, 9, 30, 15, 43, 35, 296, DateTimeKind.Local).AddTicks(930),
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 396, DateTimeKind.Local).AddTicks(3863),
                             Email = "mehmet.demir@ofismalzemeleri.com",
                             IdentityNumber = "98765432102",
                             MobilePhone = "+905551234568",
@@ -432,7 +723,7 @@ namespace DataAccess.Context.Migrations
                         {
                             UserDetailCode = 3L,
                             BirthDate = new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2024, 9, 30, 15, 43, 35, 296, DateTimeKind.Local).AddTicks(940),
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 396, DateTimeKind.Local).AddTicks(3865),
                             Email = "ayse.kaya@kirtasiyedunyasi.com",
                             IdentityNumber = "98765432103",
                             MobilePhone = "+905551234569",
@@ -445,7 +736,7 @@ namespace DataAccess.Context.Migrations
                         {
                             UserDetailCode = 4L,
                             BirthDate = new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2024, 9, 30, 15, 43, 35, 296, DateTimeKind.Local).AddTicks(940),
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 396, DateTimeKind.Local).AddTicks(3896),
                             Email = "ali.celik@ofismerkezi.com",
                             IdentityNumber = "98765432104",
                             MobilePhone = "+905551234570",
@@ -458,7 +749,7 @@ namespace DataAccess.Context.Migrations
                         {
                             UserDetailCode = 5L,
                             BirthDate = new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2024, 9, 30, 15, 43, 35, 296, DateTimeKind.Local).AddTicks(940),
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 396, DateTimeKind.Local).AddTicks(3897),
                             Email = "fatma.yurt@kirtasiyevi.com",
                             IdentityNumber = "98765432105",
                             MobilePhone = "+905551234571",
@@ -506,21 +797,21 @@ namespace DataAccess.Context.Migrations
                         new
                         {
                             UserRoleCode = 1L,
-                            CreatedDate = new DateTime(2024, 9, 30, 15, 43, 35, 296, DateTimeKind.Local).AddTicks(1030),
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 396, DateTimeKind.Local).AddTicks(4082),
                             RoleDescription = "Admin",
                             Status = 1
                         },
                         new
                         {
                             UserRoleCode = 2L,
-                            CreatedDate = new DateTime(2024, 9, 30, 15, 43, 35, 296, DateTimeKind.Local).AddTicks(1040),
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 396, DateTimeKind.Local).AddTicks(4085),
                             RoleDescription = "Yönetici",
                             Status = 1
                         },
                         new
                         {
                             UserRoleCode = 3L,
-                            CreatedDate = new DateTime(2024, 9, 30, 15, 43, 35, 296, DateTimeKind.Local).AddTicks(1040),
+                            CreatedDate = new DateTime(2024, 9, 30, 19, 15, 52, 396, DateTimeKind.Local).AddTicks(4086),
                             RoleDescription = "Kullanici",
                             Status = 1
                         });

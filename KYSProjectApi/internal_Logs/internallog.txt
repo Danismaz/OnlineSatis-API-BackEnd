@@ -584,3 +584,67 @@
 2024-08-23 20:38:06.7053 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
 2024-08-23 20:38:06.7053 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
 2024-08-23 20:38:06.7568 Info Configuration initialized.
+2024-09-30 15:52:02.9136 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-30 15:52:02.9933 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-09-30 15:52:03.0293 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\DELL\Source\Repos\OnlineSatis-API-BackEnd\KYSProjectApi\nlog.config
+2024-09-30 15:52:03.0537 Info Configuration initialized.
+2024-09-30 18:37:50.3636 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-30 18:37:50.3930 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-09-30 18:37:50.4009 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\DELL\source\repos\OnlineSatis-API-BackEnd\KYSProjectApi\nlog.config
+2024-09-30 18:37:50.4009 Info Configuration initialized.
+2024-09-30 18:37:51.3133 Info AppDomain Shutting down. LogFactory closing...
+2024-09-30 18:37:51.3133 Info LogFactory has been closed.
+2024-09-30 18:40:34.6072 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-30 18:40:34.6174 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-09-30 18:40:34.6244 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\DELL\source\repos\OnlineSatis-API-BackEnd\KYSProjectApi\nlog.config
+2024-09-30 18:40:34.6244 Info Configuration initialized.
+2024-09-30 18:40:35.2455 Info AppDomain Shutting down. LogFactory closing...
+2024-09-30 18:40:35.2455 Info LogFactory has been closed.
+2024-09-30 18:44:05.8008 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-30 18:44:05.8008 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-09-30 18:44:05.8272 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\DELL\source\repos\OnlineSatis-API-BackEnd\KYSProjectApi\nlog.config
+2024-09-30 18:44:05.8361 Info Configuration initialized.
+2024-09-30 18:44:06.4548 Info AppDomain Shutting down. LogFactory closing...
+2024-09-30 18:44:06.4548 Info LogFactory has been closed.
+2024-09-30 18:45:09.0939 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-30 18:45:09.0939 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-09-30 18:45:09.1114 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\DELL\source\repos\OnlineSatis-API-BackEnd\KYSProjectApi\nlog.config
+2024-09-30 18:45:09.1114 Info Configuration initialized.
+2024-09-30 18:45:09.7507 Info AppDomain Shutting down. LogFactory closing...
+2024-09-30 18:45:09.7567 Info LogFactory has been closed.
+2024-09-30 18:45:50.3519 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-30 18:45:50.3621 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-09-30 18:45:50.3621 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\DELL\source\repos\OnlineSatis-API-BackEnd\KYSProjectApi\nlog.config
+2024-09-30 18:45:50.3748 Info Configuration initialized.
+2024-09-30 18:45:50.9955 Info AppDomain Shutting down. LogFactory closing...
+2024-09-30 18:45:51.0008 Info LogFactory has been closed.
+2024-09-30 18:49:28.2871 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-30 18:49:28.2982 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-09-30 18:49:28.2982 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\DELL\source\repos\OnlineSatis-API-BackEnd\KYSProjectApi\nlog.config
+2024-09-30 18:49:28.3123 Info Configuration initialized.
+2024-09-30 18:49:28.9768 Info AppDomain Shutting down. LogFactory closing...
+2024-09-30 18:49:28.9768 Info LogFactory has been closed.
+2024-09-30 18:55:45.3023 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-30 18:55:45.3136 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-09-30 18:55:45.3136 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\DELL\source\repos\OnlineSatis-API-BackEnd\KYSProjectApi\nlog.config
+2024-09-30 18:55:45.3267 Info Configuration initialized.
+2024-09-30 18:55:45.9810 Info AppDomain Shutting down. LogFactory closing...
+2024-09-30 18:55:45.9810 Info LogFactory has been closed.
+2024-09-30 19:09:40.8152 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-30 19:09:40.8152 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-09-30 19:09:40.8329 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\DELL\source\repos\OnlineSatis-API-BackEnd\KYSProjectApi\nlog.config
+2024-09-30 19:09:40.8329 Info Configuration initialized.
+2024-09-30 19:09:41.5457 Info AppDomain Shutting down. LogFactory closing...
+2024-09-30 19:09:41.5457 Info LogFactory has been closed.
+2024-09-30 19:15:51.5359 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-30 19:15:51.5505 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-09-30 19:15:51.5505 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\DELL\source\repos\OnlineSatis-API-BackEnd\KYSProjectApi\nlog.config
+2024-09-30 19:15:51.5505 Info Configuration initialized.
+2024-09-30 19:15:52.9872 Info AppDomain Shutting down. LogFactory closing...
+2024-09-30 19:15:52.9948 Info LogFactory has been closed.
+2024-09-30 19:16:12.2414 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-09-30 19:16:12.2557 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-09-30 19:16:12.2629 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\DELL\source\repos\OnlineSatis-API-BackEnd\KYSProjectApi\nlog.config
+2024-09-30 19:16:12.2629 Info Configuration initialized.
+2024-09-30 19:16:23.2641 Info AppDomain Shutting down. LogFactory closing...
+2024-09-30 19:16:23.2641 Info LogFactory has been closed.

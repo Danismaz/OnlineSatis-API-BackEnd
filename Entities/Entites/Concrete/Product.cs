@@ -15,6 +15,7 @@ public class Product : BaseEntity
     public decimal ProductPrice { get; set; }
     [Required]
     public int Stock { get; set; }
-
+    [Required]
+    public Int64 CategoryCode { get; set; }
     public Category Category { get; set; }
 }
