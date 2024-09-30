@@ -1,0 +1,586 @@
+2024-08-05 12:51:10.6569 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 12:51:10.7210 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 12:51:10.7315 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 12:51:10.7315 Info Configuration initialized.
+2024-08-05 12:53:06.5984 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 12:53:06.6284 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 12:53:06.6381 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 12:53:06.6507 Info Configuration initialized.
+2024-08-05 12:57:35.1205 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 12:57:35.1617 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 12:57:35.1966 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 12:57:35.2181 Info Configuration initialized.
+2024-08-05 12:58:41.5438 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 12:58:41.5661 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 12:58:41.5791 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 12:58:41.5990 Info Configuration initialized.
+2024-08-05 13:01:48.8788 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 13:01:48.9093 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 13:01:48.9204 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 13:01:48.9204 Info Configuration initialized.
+2024-08-05 13:02:36.8868 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 13:02:36.9055 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 13:02:36.9055 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 13:02:36.9250 Info Configuration initialized.
+2024-08-05 13:06:13.1396 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 13:06:13.1701 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 13:06:13.1816 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 13:06:13.1968 Info Configuration initialized.
+2024-08-05 13:07:55.3569 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 13:07:55.3974 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 13:07:55.4151 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 13:07:55.4332 Info Configuration initialized.
+2024-08-05 13:08:13.3421 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 13:08:13.3740 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 13:08:13.3912 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 13:08:13.4060 Info Configuration initialized.
+2024-08-05 13:09:48.8848 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 13:09:48.9197 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 13:09:48.9321 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 13:09:48.9477 Info Configuration initialized.
+2024-08-05 13:12:22.2720 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 13:12:22.3088 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 13:12:22.3241 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 13:12:22.3450 Info Configuration initialized.
+2024-08-05 13:16:37.0686 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 13:16:37.1019 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 13:16:37.1149 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 13:16:37.1256 Info Configuration initialized.
+2024-08-05 13:28:07.6509 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 13:28:07.6758 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 13:28:07.6854 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 13:28:07.6983 Info Configuration initialized.
+2024-08-05 13:29:43.6096 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 13:29:43.6405 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 13:29:43.6525 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 13:29:43.6685 Info Configuration initialized.
+2024-08-05 16:14:19.0992 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:14:19.1437 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:14:19.1622 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:14:19.1798 Info Configuration initialized.
+2024-08-05 16:15:11.6568 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:15:11.6896 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:15:11.7025 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:15:11.7201 Info Configuration initialized.
+2024-08-05 16:15:38.5817 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:15:38.6004 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:15:38.6097 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:15:38.6193 Info Configuration initialized.
+2024-08-05 16:18:11.3427 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:18:11.3766 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:18:11.4118 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:18:11.4270 Info Configuration initialized.
+2024-08-05 16:20:49.2944 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:20:49.3365 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:20:49.3571 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:20:49.3832 Info Configuration initialized.
+2024-08-05 16:22:39.6868 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:22:39.7143 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:22:39.7143 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:22:39.7421 Info Configuration initialized.
+2024-08-05 16:24:10.3292 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:24:10.3570 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:24:10.3570 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:24:10.3791 Info Configuration initialized.
+2024-08-05 16:26:04.3562 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:26:04.3744 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:26:04.3840 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:26:04.3840 Info Configuration initialized.
+2024-08-05 16:26:07.5268 Info AppDomain Shutting down. LogFactory closing...
+2024-08-05 16:26:07.5268 Info LogFactory has been closed.
+2024-08-05 16:28:10.2085 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:28:10.2391 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:28:10.2545 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:28:10.2683 Info Configuration initialized.
+2024-08-05 16:30:16.8549 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:30:16.8878 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:30:16.9023 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:30:16.9023 Info Configuration initialized.
+2024-08-05 16:32:57.2058 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:32:57.2324 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:32:57.2509 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:32:57.2648 Info Configuration initialized.
+2024-08-05 16:35:45.9399 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:35:45.9811 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:35:45.9977 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:35:46.0167 Info Configuration initialized.
+2024-08-05 16:39:32.5311 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:39:32.5624 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:39:32.5787 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:39:32.6028 Info Configuration initialized.
+2024-08-05 16:46:53.3831 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:46:53.4156 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:46:53.4156 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:46:53.4461 Info Configuration initialized.
+2024-08-05 16:49:48.8837 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:49:48.8837 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:49:48.9042 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:49:48.9147 Info Configuration initialized.
+2024-08-05 16:49:51.3681 Info AppDomain Shutting down. LogFactory closing...
+2024-08-05 16:49:51.3681 Info LogFactory has been closed.
+2024-08-05 16:49:59.9030 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:49:59.9354 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:49:59.9500 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:49:59.9655 Info Configuration initialized.
+2024-08-05 16:56:02.2768 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:56:02.2919 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:56:02.2919 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:56:02.3075 Info Configuration initialized.
+2024-08-05 16:56:04.0424 Info AppDomain Shutting down. LogFactory closing...
+2024-08-05 16:56:04.0424 Info LogFactory has been closed.
+2024-08-05 16:56:18.2377 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:56:18.2659 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:56:18.2879 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:56:18.3079 Info Configuration initialized.
+2024-08-05 16:57:35.4116 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:57:35.4255 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:57:35.4332 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:57:35.4332 Info Configuration initialized.
+2024-08-05 16:57:37.6162 Info AppDomain Shutting down. LogFactory closing...
+2024-08-05 16:57:37.6227 Info LogFactory has been closed.
+2024-08-05 16:57:50.2424 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:57:50.2533 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:57:50.2600 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:57:50.2600 Info Configuration initialized.
+2024-08-05 16:58:01.3418 Info AppDomain Shutting down. LogFactory closing...
+2024-08-05 16:58:01.3418 Info LogFactory has been closed.
+2024-08-05 16:58:12.4055 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 16:58:12.4312 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 16:58:12.4312 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 16:58:12.4528 Info Configuration initialized.
+2024-08-05 18:08:39.1775 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 18:08:39.1935 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 18:08:39.2005 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 18:08:39.2005 Info Configuration initialized.
+2024-08-05 18:08:41.5219 Info AppDomain Shutting down. LogFactory closing...
+2024-08-05 18:08:41.5294 Info LogFactory has been closed.
+2024-08-05 18:08:47.4988 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-05 18:08:47.5109 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-05 18:08:47.5109 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-05 18:08:47.5259 Info Configuration initialized.
+2024-08-05 18:08:57.9364 Info AppDomain Shutting down. LogFactory closing...
+2024-08-05 18:08:57.9364 Info LogFactory has been closed.
+2024-08-06 12:47:29.3932 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 12:47:29.4211 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 12:47:29.4339 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 12:47:29.4467 Info Configuration initialized.
+2024-08-06 12:53:21.4246 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 12:53:21.4527 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 12:53:21.4527 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 12:53:21.4694 Info Configuration initialized.
+2024-08-06 12:53:24.6684 Info AppDomain Shutting down. LogFactory closing...
+2024-08-06 12:53:24.6684 Info LogFactory has been closed.
+2024-08-06 12:53:31.9703 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 12:53:31.9842 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 12:53:31.9842 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 12:53:31.9995 Info Configuration initialized.
+2024-08-06 12:53:42.5615 Info AppDomain Shutting down. LogFactory closing...
+2024-08-06 12:53:42.5615 Info LogFactory has been closed.
+2024-08-06 12:54:26.1813 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 12:54:26.2428 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 12:54:26.2428 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 12:54:26.2758 Info Configuration initialized.
+2024-08-06 12:57:53.2046 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 12:57:53.2338 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 12:57:53.2482 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 12:57:53.2617 Info Configuration initialized.
+2024-08-06 13:09:45.7103 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 13:09:45.7478 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 13:09:45.7663 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 13:09:45.7826 Info Configuration initialized.
+2024-08-06 13:14:05.5776 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 13:14:05.6115 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 13:14:05.6246 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 13:14:05.6393 Info Configuration initialized.
+2024-08-06 13:17:24.3132 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 13:17:24.3431 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 13:17:24.3562 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 13:17:24.3719 Info Configuration initialized.
+2024-08-06 13:23:07.3310 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 13:23:07.6526 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 13:23:07.6693 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 13:23:07.6854 Info Configuration initialized.
+2024-08-06 13:32:07.6430 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 13:32:07.6719 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 13:32:07.6846 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 13:32:07.6846 Info Configuration initialized.
+2024-08-06 13:39:53.2242 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 13:39:53.2608 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 13:39:53.2608 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 13:39:53.2928 Info Configuration initialized.
+2024-08-06 13:42:24.0871 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 13:42:24.1175 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 13:42:24.1175 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 13:42:24.1477 Info Configuration initialized.
+2024-08-06 13:43:58.3681 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 13:43:58.4038 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 13:43:58.4163 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 13:43:58.4329 Info Configuration initialized.
+2024-08-06 13:44:56.0863 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 13:44:56.1129 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 13:44:56.1300 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 13:44:56.1459 Info Configuration initialized.
+2024-08-06 14:25:41.4059 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 14:25:41.4439 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 14:25:41.4603 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 14:25:41.4758 Info Configuration initialized.
+2024-08-06 14:27:14.6033 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 14:27:14.6305 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 14:27:14.6421 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 14:27:14.6563 Info Configuration initialized.
+2024-08-06 14:29:57.3420 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 14:29:57.4978 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 14:29:57.5366 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 14:29:57.5585 Info Configuration initialized.
+2024-08-06 14:36:51.4172 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 14:36:51.4667 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 14:36:51.4900 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 14:36:51.5127 Info Configuration initialized.
+2024-08-06 14:52:34.5832 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 14:52:34.6174 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 14:52:34.6350 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 14:52:34.6350 Info Configuration initialized.
+2024-08-06 15:19:10.7304 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 15:19:10.8107 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 15:19:10.8240 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 15:19:10.8380 Info Configuration initialized.
+2024-08-06 15:28:32.7189 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 15:28:32.7513 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 15:28:32.7628 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 15:28:32.7756 Info Configuration initialized.
+2024-08-06 15:34:24.6745 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 15:34:24.7131 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 15:34:24.7326 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 15:34:24.7514 Info Configuration initialized.
+2024-08-06 15:46:06.6203 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 15:46:06.8716 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 15:46:06.8862 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 15:46:06.9005 Info Configuration initialized.
+2024-08-06 15:47:54.1139 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 15:47:54.1395 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 15:47:54.1493 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 15:47:54.1493 Info Configuration initialized.
+2024-08-06 15:51:02.7892 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 15:51:02.8277 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 15:51:02.8411 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 15:51:02.8561 Info Configuration initialized.
+2024-08-06 15:53:54.2874 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 15:53:54.3190 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 15:53:54.3313 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 15:53:54.3448 Info Configuration initialized.
+2024-08-06 15:55:57.8204 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 15:55:57.8990 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 15:55:57.9145 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 15:55:57.9290 Info Configuration initialized.
+2024-08-06 15:58:19.9340 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 15:58:19.9729 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 15:58:19.9912 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 15:58:20.0093 Info Configuration initialized.
+2024-08-06 16:00:15.8535 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 16:00:16.5572 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 16:00:16.5572 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 16:00:16.5779 Info Configuration initialized.
+2024-08-06 16:05:58.1033 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 16:05:58.1409 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 16:05:58.1694 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 16:05:58.1964 Info Configuration initialized.
+2024-08-06 16:22:48.8991 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 16:22:48.9261 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 16:22:48.9387 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 16:22:48.9525 Info Configuration initialized.
+2024-08-06 16:26:18.7495 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 16:26:18.7833 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 16:26:18.7978 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 16:26:18.8160 Info Configuration initialized.
+2024-08-06 16:29:49.4170 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 16:29:49.4550 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 16:29:49.4693 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 16:29:49.4838 Info Configuration initialized.
+2024-08-06 17:07:27.4440 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 17:07:27.4744 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 17:07:27.4861 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 17:07:27.4979 Info Configuration initialized.
+2024-08-06 17:11:57.1060 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 17:11:57.1349 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 17:11:57.1349 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 17:11:57.1578 Info Configuration initialized.
+2024-08-06 17:12:57.9251 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 17:12:57.9524 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 17:12:57.9655 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 17:12:57.9816 Info Configuration initialized.
+2024-08-06 17:46:43.7100 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 17:46:43.7425 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 17:46:43.7605 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 17:46:43.7605 Info Configuration initialized.
+2024-08-06 17:47:01.1146 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 17:47:01.1396 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 17:47:01.1490 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 17:47:01.1490 Info Configuration initialized.
+2024-08-06 17:50:17.9354 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 17:50:17.9745 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 17:50:17.9870 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 17:50:18.0026 Info Configuration initialized.
+2024-08-06 17:58:29.5941 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 17:58:29.6299 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 17:58:29.6466 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 17:58:29.6622 Info Configuration initialized.
+2024-08-06 17:59:23.6517 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 17:59:23.7948 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 17:59:23.8164 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 17:59:23.8355 Info Configuration initialized.
+2024-08-06 18:08:15.5865 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 18:08:15.6169 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 18:08:15.6371 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 18:08:15.6546 Info Configuration initialized.
+2024-08-06 18:10:42.6736 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 18:10:42.7115 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 18:10:42.7115 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 18:10:42.7388 Info Configuration initialized.
+2024-08-06 18:16:03.5953 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 18:16:03.6501 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 18:16:03.6724 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 18:16:03.6955 Info Configuration initialized.
+2024-08-06 18:17:03.1913 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 18:17:03.2285 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 18:17:03.2439 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 18:17:03.2683 Info Configuration initialized.
+2024-08-06 18:27:56.4424 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 18:27:56.4773 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 18:27:56.4773 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 18:27:56.5052 Info Configuration initialized.
+2024-08-06 18:30:12.0926 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-06 18:30:12.1268 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-06 18:30:12.1430 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-06 18:30:12.1609 Info Configuration initialized.
+2024-08-09 10:21:57.3671 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 10:21:57.4645 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 10:21:57.4797 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 10:21:57.4932 Info Configuration initialized.
+2024-08-09 14:14:44.8018 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 14:14:44.8774 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 14:14:44.8959 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 14:14:44.9186 Info Configuration initialized.
+2024-08-09 14:15:38.0844 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 14:15:38.1167 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 14:15:38.1167 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 14:15:38.1411 Info Configuration initialized.
+2024-08-09 14:17:27.3567 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 14:17:27.3937 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 14:17:27.4070 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 14:17:27.4207 Info Configuration initialized.
+2024-08-09 14:19:40.9357 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 14:19:40.9737 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 14:19:40.9882 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 14:19:41.0012 Info Configuration initialized.
+2024-08-09 14:41:13.1443 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 14:41:13.1772 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 14:41:13.1772 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 14:41:13.2027 Info Configuration initialized.
+2024-08-09 14:41:43.5629 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 14:41:43.5912 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 14:41:43.6042 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 14:41:43.6170 Info Configuration initialized.
+2024-08-09 14:52:08.1526 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 14:52:08.2154 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 14:52:08.2289 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 14:52:08.2434 Info Configuration initialized.
+2024-08-09 14:54:11.1506 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 14:54:11.1798 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 14:54:11.1798 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 14:54:11.2102 Info Configuration initialized.
+2024-08-09 14:55:58.9587 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 14:55:58.9856 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 14:55:58.9993 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 14:55:59.0126 Info Configuration initialized.
+2024-08-09 15:02:26.3046 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 15:02:26.3419 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 15:02:26.3562 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 15:02:26.3690 Info Configuration initialized.
+2024-08-09 15:02:49.8589 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 15:02:49.8921 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 15:02:49.9043 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 15:02:49.9151 Info Configuration initialized.
+2024-08-09 15:07:31.7437 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 15:07:31.7784 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 15:07:31.7900 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 15:07:31.8040 Info Configuration initialized.
+2024-08-09 15:08:10.2061 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 15:08:10.2379 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 15:08:10.2493 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 15:08:10.2641 Info Configuration initialized.
+2024-08-09 15:57:48.8269 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 15:57:48.8580 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 15:57:48.8695 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 15:57:48.8808 Info Configuration initialized.
+2024-08-09 15:58:45.8125 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 15:58:45.8522 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 15:58:45.8739 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 15:58:45.8933 Info Configuration initialized.
+2024-08-09 15:59:11.3744 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 15:59:11.4068 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 15:59:11.4239 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 15:59:11.4365 Info Configuration initialized.
+2024-08-09 16:02:38.1313 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 16:02:38.1710 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 16:02:38.1896 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 16:02:38.2100 Info Configuration initialized.
+2024-08-09 16:09:34.5245 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 16:09:34.5705 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 16:09:34.5908 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 16:09:34.6098 Info Configuration initialized.
+2024-08-09 16:11:20.1340 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 16:11:20.1795 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 16:11:20.2035 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 16:11:20.2231 Info Configuration initialized.
+2024-08-09 16:12:37.5790 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 16:12:38.0886 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 16:12:38.1130 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 16:12:38.1367 Info Configuration initialized.
+2024-08-09 16:13:46.0305 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 16:13:46.0675 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 16:13:46.0850 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 16:13:46.0850 Info Configuration initialized.
+2024-08-09 16:18:20.5667 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 16:18:20.6013 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 16:18:20.6013 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 16:18:20.6264 Info Configuration initialized.
+2024-08-09 16:20:33.4432 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 16:20:33.9547 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 16:20:33.9702 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 16:20:33.9862 Info Configuration initialized.
+2024-08-09 16:48:34.9668 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 16:48:35.0113 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 16:48:35.0301 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 16:48:35.0516 Info Configuration initialized.
+2024-08-09 16:52:13.9764 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 16:52:14.0121 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 16:52:14.0264 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 16:52:14.0480 Info Configuration initialized.
+2024-08-09 16:55:22.8448 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 16:55:22.8749 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 16:55:22.8843 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 16:55:22.8962 Info Configuration initialized.
+2024-08-09 16:59:20.2822 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 16:59:20.3159 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 16:59:20.3261 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 16:59:20.3386 Info Configuration initialized.
+2024-08-09 17:09:46.5459 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-09 17:09:46.5778 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-09 17:09:46.5887 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-09 17:09:46.5995 Info Configuration initialized.
+2024-08-12 16:09:42.2746 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 16:09:42.3214 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 16:09:42.3214 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 16:09:42.3396 Info Configuration initialized.
+2024-08-12 16:09:45.0673 Info AppDomain Shutting down. LogFactory closing...
+2024-08-12 16:09:45.0673 Info LogFactory has been closed.
+2024-08-12 16:10:15.4278 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 16:10:15.4647 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 16:10:15.4772 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 16:10:15.4927 Info Configuration initialized.
+2024-08-12 16:10:29.3867 Info AppDomain Shutting down. LogFactory closing...
+2024-08-12 16:10:29.3944 Info LogFactory has been closed.
+2024-08-12 16:13:34.7427 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 16:13:34.7608 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 16:13:34.7697 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 16:13:34.7697 Info Configuration initialized.
+2024-08-12 16:13:37.6211 Info AppDomain Shutting down. LogFactory closing...
+2024-08-12 16:13:37.6289 Info LogFactory has been closed.
+2024-08-12 16:13:53.0853 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 16:13:53.1018 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 16:13:53.1018 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 16:13:53.1194 Info Configuration initialized.
+2024-08-12 16:14:05.1422 Info AppDomain Shutting down. LogFactory closing...
+2024-08-12 16:14:05.1422 Info LogFactory has been closed.
+2024-08-12 16:16:15.4666 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 16:16:15.4843 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 16:16:15.4932 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 16:16:15.5037 Info Configuration initialized.
+2024-08-12 16:16:18.0085 Info AppDomain Shutting down. LogFactory closing...
+2024-08-12 16:16:18.0085 Info LogFactory has been closed.
+2024-08-12 16:16:26.1250 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 16:16:26.1548 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 16:16:26.1839 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 16:16:26.2072 Info Configuration initialized.
+2024-08-12 16:16:37.9358 Info AppDomain Shutting down. LogFactory closing...
+2024-08-12 16:16:37.9432 Info LogFactory has been closed.
+2024-08-12 16:42:27.9382 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 16:42:27.9573 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 16:42:27.9573 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 16:42:27.9796 Info Configuration initialized.
+2024-08-12 16:42:31.3728 Info AppDomain Shutting down. LogFactory closing...
+2024-08-12 16:42:31.3813 Info LogFactory has been closed.
+2024-08-12 16:42:47.5009 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 16:42:47.5164 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 16:42:47.5240 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 16:42:47.5344 Info Configuration initialized.
+2024-08-12 16:43:01.0598 Info AppDomain Shutting down. LogFactory closing...
+2024-08-12 16:43:01.0690 Info LogFactory has been closed.
+2024-08-12 17:01:33.5184 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 17:01:33.5868 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 17:01:33.6001 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 17:01:33.6156 Info Configuration initialized.
+2024-08-12 17:10:55.7579 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 17:10:55.7961 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 17:10:55.8139 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 17:10:55.8289 Info Configuration initialized.
+2024-08-12 17:53:23.3474 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 17:53:23.3831 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 17:53:23.3982 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 17:53:23.4132 Info Configuration initialized.
+2024-08-12 17:54:42.1511 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 17:54:42.1862 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 17:54:42.1994 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 17:54:42.2125 Info Configuration initialized.
+2024-08-12 17:56:33.9663 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 17:56:34.0642 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 17:56:34.0834 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 17:56:34.1130 Info Configuration initialized.
+2024-08-12 19:31:11.5047 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 19:31:11.5429 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 19:31:11.5592 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 19:31:11.5749 Info Configuration initialized.
+2024-08-12 20:31:20.5375 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 20:31:20.5681 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 20:31:20.5817 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 20:31:20.5965 Info Configuration initialized.
+2024-08-12 20:45:55.6375 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 20:45:55.6682 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 20:45:55.6800 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 20:45:55.6927 Info Configuration initialized.
+2024-08-12 20:54:33.6859 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 20:54:33.7340 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 20:54:33.7500 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 20:54:33.7655 Info Configuration initialized.
+2024-08-12 20:59:38.2184 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 20:59:38.2582 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 20:59:38.2750 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 20:59:38.2979 Info Configuration initialized.
+2024-08-12 22:35:43.5812 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 22:35:43.5960 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 22:35:43.5960 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 22:35:43.6128 Info Configuration initialized.
+2024-08-12 22:35:46.0075 Info AppDomain Shutting down. LogFactory closing...
+2024-08-12 22:35:46.0075 Info LogFactory has been closed.
+2024-08-12 22:35:57.1056 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 22:35:57.1181 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 22:35:57.1181 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 22:35:57.1328 Info Configuration initialized.
+2024-08-12 22:36:08.4219 Info AppDomain Shutting down. LogFactory closing...
+2024-08-12 22:36:08.4299 Info LogFactory has been closed.
+2024-08-12 22:37:31.3837 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 22:37:31.3999 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 22:37:31.4081 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 22:37:31.4081 Info Configuration initialized.
+2024-08-12 22:37:33.9740 Info AppDomain Shutting down. LogFactory closing...
+2024-08-12 22:37:33.9740 Info LogFactory has been closed.
+2024-08-12 22:37:42.6211 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-12 22:37:42.6344 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-12 22:37:42.6417 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-12 22:37:42.6417 Info Configuration initialized.
+2024-08-12 22:37:51.1458 Info AppDomain Shutting down. LogFactory closing...
+2024-08-12 22:37:51.1458 Info LogFactory has been closed.
+2024-08-23 20:38:06.6444 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-08-23 20:38:06.7053 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-08-23 20:38:06.7053 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\danis\source\repos\KYSProject-Backend\KYSProjectApi\nlog.config
+2024-08-23 20:38:06.7568 Info Configuration initialized.
