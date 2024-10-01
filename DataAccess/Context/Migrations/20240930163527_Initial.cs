@@ -6,10 +6,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace DataAccess.Migrations
+namespace DataAccess.Context.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -218,11 +218,11 @@ namespace DataAccess.Migrations
                 columns: new[] { "CategoryCode", "CategoryDescription", "CategoryName", "CreatedDate", "DeletedDate", "Status", "UpdatedDate" },
                 values: new object[,]
                 {
-                    { 1L, "Farklı türde kalemler.", "Kalemler", new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4361), null, 1, null },
-                    { 2L, "Çeşitli defter türleri.", "Defterler", new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4363), null, 1, null },
-                    { 3L, "Ofis için gerekli malzemeler.", "Ofis Malzemeleri", new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4364), null, 1, null },
-                    { 4L, "Resim ve sanat malzemeleri.", "Sanat Malzemeleri", new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4365), null, 1, null },
-                    { 5L, "Farklı tür yapıştırıcılar.", "Yapıştırıcılar", new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4366), null, 1, null }
+                    { 1L, "Farklı türde kalemler.", "Kalemler", new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9660), null, 1, null },
+                    { 2L, "Çeşitli defter türleri.", "Defterler", new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9660), null, 1, null },
+                    { 3L, "Ofis için gerekli malzemeler.", "Ofis Malzemeleri", new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9660), null, 1, null },
+                    { 4L, "Resim ve sanat malzemeleri.", "Sanat Malzemeleri", new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9660), null, 1, null },
+                    { 5L, "Farklı tür yapıştırıcılar.", "Yapıştırıcılar", new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9670), null, 1, null }
                 });
 
             migrationBuilder.InsertData(
@@ -230,9 +230,9 @@ namespace DataAccess.Migrations
                 columns: new[] { "UserRoleCode", "CreatedDate", "DeletedDate", "RoleDescription", "Status", "UpdatedDate", "UserCode" },
                 values: new object[,]
                 {
-                    { 1L, new DateTime(2024, 9, 30, 19, 15, 52, 396, DateTimeKind.Local).AddTicks(4082), null, "Admin", 1, null, null },
-                    { 2L, new DateTime(2024, 9, 30, 19, 15, 52, 396, DateTimeKind.Local).AddTicks(4085), null, "Yönetici", 1, null, null },
-                    { 3L, new DateTime(2024, 9, 30, 19, 15, 52, 396, DateTimeKind.Local).AddTicks(4086), null, "Kullanici", 1, null, null }
+                    { 1L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(8690), null, "Admin", 1, null, null },
+                    { 2L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(8690), null, "Yönetici", 1, null, null },
+                    { 3L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(8700), null, "Kullanici", 1, null, null }
                 });
 
             migrationBuilder.InsertData(
@@ -240,31 +240,31 @@ namespace DataAccess.Migrations
                 columns: new[] { "ProductCode", "CategoryCode", "CreatedDate", "DeletedDate", "OrderDetailCode", "ProductName", "ProductPrice", "ShipperCode", "Status", "Stock", "UpdatedDate" },
                 values: new object[,]
                 {
-                    { 1L, 1L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4456), null, null, "Kurşun Kalem", 40m, null, 1, 100, null },
-                    { 2L, 1L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4463), null, null, "Mavi Renkli Kalem", 80m, null, 1, 80, null },
-                    { 3L, 1L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4464), null, null, "Kırmızı Jel Kalem", 90m, null, 1, 60, null },
-                    { 4L, 1L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4465), null, null, "Siyah Mürekkep Kalem", 100m, null, 1, 40, null },
-                    { 5L, 1L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4466), null, null, "Renkli Silgi", 25m, null, 1, 120, null },
-                    { 6L, 2L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4467), null, null, "A5 Kırmızı Defter", 150m, null, 1, 200, null },
-                    { 7L, 2L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4468), null, null, "A4 Beyaz Defter", 85m, null, 1, 150, null },
-                    { 8L, 2L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4469), null, null, "Kareli Defter", 120m, null, 1, 100, null },
-                    { 9L, 2L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4470), null, null, "Çizgili Defter", 120m, null, 1, 90, null },
-                    { 10L, 2L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4471), null, null, "Sert Kapaklı Defter", 160m, null, 1, 50, null },
-                    { 11L, 3L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4473), null, null, "Zımba Makinesi", 90m, null, 1, 30, null },
-                    { 12L, 3L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4474), null, null, "Bant Dispenseri", 45m, null, 1, 70, null },
-                    { 13L, 3L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4475), null, null, "Makas", 55m, null, 1, 40, null },
-                    { 14L, 3L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4476), null, null, "Post-it Notlar", 75m, null, 1, 200, null },
-                    { 15L, 3L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4477), null, null, "Kalemtraş", 20m, null, 1, 100, null },
-                    { 16L, 4L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4478), null, null, "Akrilik Boya Seti", 165m, null, 1, 20, null },
-                    { 17L, 4L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4479), null, null, "Su Renkleri Seti", 145m, null, 1, 30, null },
-                    { 18L, 4L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4480), null, null, "Fırça Seti", 110m, null, 1, 25, null },
-                    { 19L, 4L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4481), null, null, "Çizim Defteri", 85m, null, 1, 40, null },
-                    { 20L, 4L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4482), null, null, "Sanat Paleti", 55m, null, 1, 50, null },
-                    { 21L, 5L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4484), null, null, "Sıvı Yapıştırıcı", 35m, null, 1, 60, null },
-                    { 22L, 5L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4485), null, null, "Bantlı Yapıştırıcı", 30m, null, 1, 90, null },
-                    { 23L, 5L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4486), null, null, "Hot Melt Yapıştırıcı", 80m, null, 1, 30, null },
-                    { 24L, 5L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4487), null, null, "Yapıştırıcı Stik", 75m, null, 1, 120, null },
-                    { 25L, 5L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4488), null, null, "Modeller İçin Yapıştırıcı", 55m, null, 1, 40, null }
+                    { 1L, 1L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9800), null, null, "Kurşun Kalem", 40m, null, 1, 100, null },
+                    { 2L, 1L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9810), null, null, "Mavi Renkli Kalem", 80m, null, 1, 80, null },
+                    { 3L, 1L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9810), null, null, "Kırmızı Jel Kalem", 90m, null, 1, 60, null },
+                    { 4L, 1L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9820), null, null, "Siyah Mürekkep Kalem", 100m, null, 1, 40, null },
+                    { 5L, 1L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9820), null, null, "Renkli Silgi", 25m, null, 1, 120, null },
+                    { 6L, 2L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9820), null, null, "A5 Kırmızı Defter", 150m, null, 1, 200, null },
+                    { 7L, 2L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9820), null, null, "A4 Beyaz Defter", 85m, null, 1, 150, null },
+                    { 8L, 2L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9830), null, null, "Kareli Defter", 120m, null, 1, 100, null },
+                    { 9L, 2L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9830), null, null, "Çizgili Defter", 120m, null, 1, 90, null },
+                    { 10L, 2L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9830), null, null, "Sert Kapaklı Defter", 160m, null, 1, 50, null },
+                    { 11L, 3L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9830), null, null, "Zımba Makinesi", 90m, null, 1, 30, null },
+                    { 12L, 3L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9840), null, null, "Bant Dispenseri", 45m, null, 1, 70, null },
+                    { 13L, 3L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9840), null, null, "Makas", 55m, null, 1, 40, null },
+                    { 14L, 3L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9840), null, null, "Post-it Notlar", 75m, null, 1, 200, null },
+                    { 15L, 3L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9850), null, null, "Kalemtraş", 20m, null, 1, 100, null },
+                    { 16L, 4L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9850), null, null, "Akrilik Boya Seti", 165m, null, 1, 20, null },
+                    { 17L, 4L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9850), null, null, "Su Renkleri Seti", 145m, null, 1, 30, null },
+                    { 18L, 4L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9850), null, null, "Fırça Seti", 110m, null, 1, 25, null },
+                    { 19L, 4L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9860), null, null, "Çizim Defteri", 85m, null, 1, 40, null },
+                    { 20L, 4L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9860), null, null, "Sanat Paleti", 55m, null, 1, 50, null },
+                    { 21L, 5L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9860), null, null, "Sıvı Yapıştırıcı", 35m, null, 1, 60, null },
+                    { 22L, 5L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9870), null, null, "Bantlı Yapıştırıcı", 30m, null, 1, 90, null },
+                    { 23L, 5L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9870), null, null, "Hot Melt Yapıştırıcı", 80m, null, 1, 30, null },
+                    { 24L, 5L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9870), null, null, "Yapıştırıcı Stik", 75m, null, 1, 120, null },
+                    { 25L, 5L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9870), null, null, "Modeller İçin Yapıştırıcı", 55m, null, 1, 40, null }
                 });
 
             migrationBuilder.InsertData(
@@ -272,11 +272,11 @@ namespace DataAccess.Migrations
                 columns: new[] { "UserCode", "CreatedDate", "DeletedDate", "Email", "MobilePhone", "PasswordHash", "PasswordSalt", "Status", "TwoFactorEnabled", "UpdatedDate", "UserRoleCode" },
                 values: new object[,]
                 {
-                    { 101L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4122), null, "john.doe@example.com", "+905551234567", new byte[] { 203, 245, 125, 216, 48, 215, 206, 163, 22, 181, 122, 102, 51, 28, 9, 190, 16, 236, 240, 1, 202, 54, 86, 216, 180, 105, 116, 205, 87, 236, 244, 246, 151, 9, 243, 97, 241, 221, 173, 34, 153, 33, 95, 111, 183, 94, 250, 182, 143, 107, 117, 123, 154, 128, 252, 155, 156, 0, 3, 133, 12, 74, 223, 15 }, new byte[] { 155, 140, 238, 112, 77, 92, 169, 94, 4, 92, 95, 249, 125, 0, 254, 120 }, 1, false, null, 1L },
-                    { 102L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4133), null, "jane.doe@example.com", "+905551234568", new byte[] { 203, 245, 125, 216, 48, 215, 206, 163, 22, 181, 122, 102, 51, 28, 9, 190, 16, 236, 240, 1, 202, 54, 86, 216, 180, 105, 116, 205, 87, 236, 244, 246, 151, 9, 243, 97, 241, 221, 173, 34, 153, 33, 95, 111, 183, 94, 250, 182, 143, 107, 117, 123, 154, 128, 252, 155, 156, 0, 3, 133, 12, 74, 223, 15 }, new byte[] { 155, 140, 238, 112, 77, 92, 169, 94, 4, 92, 95, 249, 125, 0, 254, 120 }, 1, false, null, 2L },
-                    { 103L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4135), null, "alice.smith@example.com", "+905551234569", new byte[] { 203, 245, 125, 216, 48, 215, 206, 163, 22, 181, 122, 102, 51, 28, 9, 190, 16, 236, 240, 1, 202, 54, 86, 216, 180, 105, 116, 205, 87, 236, 244, 246, 151, 9, 243, 97, 241, 221, 173, 34, 153, 33, 95, 111, 183, 94, 250, 182, 143, 107, 117, 123, 154, 128, 252, 155, 156, 0, 3, 133, 12, 74, 223, 15 }, new byte[] { 155, 140, 238, 112, 77, 92, 169, 94, 4, 92, 95, 249, 125, 0, 254, 120 }, 1, false, null, 3L },
-                    { 104L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4136), null, "bob.johnson@example.com", "+905551234570", new byte[] { 203, 245, 125, 216, 48, 215, 206, 163, 22, 181, 122, 102, 51, 28, 9, 190, 16, 236, 240, 1, 202, 54, 86, 216, 180, 105, 116, 205, 87, 236, 244, 246, 151, 9, 243, 97, 241, 221, 173, 34, 153, 33, 95, 111, 183, 94, 250, 182, 143, 107, 117, 123, 154, 128, 252, 155, 156, 0, 3, 133, 12, 74, 223, 15 }, new byte[] { 155, 140, 238, 112, 77, 92, 169, 94, 4, 92, 95, 249, 125, 0, 254, 120 }, 1, false, null, 3L },
-                    { 105L, new DateTime(2024, 9, 30, 19, 15, 52, 397, DateTimeKind.Local).AddTicks(4137), null, "carol.davis@example.com", "+905551234571", new byte[] { 203, 245, 125, 216, 48, 215, 206, 163, 22, 181, 122, 102, 51, 28, 9, 190, 16, 236, 240, 1, 202, 54, 86, 216, 180, 105, 116, 205, 87, 236, 244, 246, 151, 9, 243, 97, 241, 221, 173, 34, 153, 33, 95, 111, 183, 94, 250, 182, 143, 107, 117, 123, 154, 128, 252, 155, 156, 0, 3, 133, 12, 74, 223, 15 }, new byte[] { 155, 140, 238, 112, 77, 92, 169, 94, 4, 92, 95, 249, 125, 0, 254, 120 }, 1, false, null, 3L }
+                    { 101L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9540), null, "john.doe@example.com", "+905551234567", new byte[] { 94, 255, 97, 212, 21, 192, 39, 47, 239, 5, 84, 50, 230, 174, 113, 97, 209, 156, 167, 232, 180, 15, 248, 188, 212, 186, 246, 133, 243, 58, 41, 116, 188, 16, 90, 62, 14, 59, 37, 137, 191, 15, 216, 135, 174, 167, 81, 204, 29, 6, 52, 41, 57, 137, 35, 206, 173, 229, 216, 200, 109, 103, 11, 232 }, new byte[] { 7, 68, 170, 201, 155, 159, 12, 116, 220, 242, 229, 181, 181, 103, 195, 23 }, 1, false, null, 1L },
+                    { 102L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9550), null, "jane.doe@example.com", "+905551234568", new byte[] { 94, 255, 97, 212, 21, 192, 39, 47, 239, 5, 84, 50, 230, 174, 113, 97, 209, 156, 167, 232, 180, 15, 248, 188, 212, 186, 246, 133, 243, 58, 41, 116, 188, 16, 90, 62, 14, 59, 37, 137, 191, 15, 216, 135, 174, 167, 81, 204, 29, 6, 52, 41, 57, 137, 35, 206, 173, 229, 216, 200, 109, 103, 11, 232 }, new byte[] { 7, 68, 170, 201, 155, 159, 12, 116, 220, 242, 229, 181, 181, 103, 195, 23 }, 1, false, null, 2L },
+                    { 103L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9550), null, "alice.smith@example.com", "+905551234569", new byte[] { 94, 255, 97, 212, 21, 192, 39, 47, 239, 5, 84, 50, 230, 174, 113, 97, 209, 156, 167, 232, 180, 15, 248, 188, 212, 186, 246, 133, 243, 58, 41, 116, 188, 16, 90, 62, 14, 59, 37, 137, 191, 15, 216, 135, 174, 167, 81, 204, 29, 6, 52, 41, 57, 137, 35, 206, 173, 229, 216, 200, 109, 103, 11, 232 }, new byte[] { 7, 68, 170, 201, 155, 159, 12, 116, 220, 242, 229, 181, 181, 103, 195, 23 }, 1, false, null, 3L },
+                    { 104L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9550), null, "bob.johnson@example.com", "+905551234570", new byte[] { 94, 255, 97, 212, 21, 192, 39, 47, 239, 5, 84, 50, 230, 174, 113, 97, 209, 156, 167, 232, 180, 15, 248, 188, 212, 186, 246, 133, 243, 58, 41, 116, 188, 16, 90, 62, 14, 59, 37, 137, 191, 15, 216, 135, 174, 167, 81, 204, 29, 6, 52, 41, 57, 137, 35, 206, 173, 229, 216, 200, 109, 103, 11, 232 }, new byte[] { 7, 68, 170, 201, 155, 159, 12, 116, 220, 242, 229, 181, 181, 103, 195, 23 }, 1, false, null, 3L },
+                    { 105L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9560), null, "carol.davis@example.com", "+905551234571", new byte[] { 94, 255, 97, 212, 21, 192, 39, 47, 239, 5, 84, 50, 230, 174, 113, 97, 209, 156, 167, 232, 180, 15, 248, 188, 212, 186, 246, 133, 243, 58, 41, 116, 188, 16, 90, 62, 14, 59, 37, 137, 191, 15, 216, 135, 174, 167, 81, 204, 29, 6, 52, 41, 57, 137, 35, 206, 173, 229, 216, 200, 109, 103, 11, 232 }, new byte[] { 7, 68, 170, 201, 155, 159, 12, 116, 220, 242, 229, 181, 181, 103, 195, 23 }, 1, false, null, 3L }
                 });
 
             migrationBuilder.InsertData(
@@ -284,11 +284,11 @@ namespace DataAccess.Migrations
                 columns: new[] { "UserDetailCode", "BirthDate", "CreatedDate", "DeletedDate", "Email", "IdentityNumber", "MobilePhone", "Name", "Status", "Surname", "UpdatedDate", "UserCode" },
                 values: new object[,]
                 {
-                    { 1L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 9, 30, 19, 15, 52, 396, DateTimeKind.Local).AddTicks(3841), null, "ahmet.yilmaz@kirtasiyemerkezi.com", "98765432101", "+905551234567", "Ahmet", 1, "Yılmaz", null, 101L },
-                    { 2L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 9, 30, 19, 15, 52, 396, DateTimeKind.Local).AddTicks(3863), null, "mehmet.demir@ofismalzemeleri.com", "98765432102", "+905551234568", "Mehmet", 1, "Demir", null, 102L },
-                    { 3L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 9, 30, 19, 15, 52, 396, DateTimeKind.Local).AddTicks(3865), null, "ayse.kaya@kirtasiyedunyasi.com", "98765432103", "+905551234569", "Ayşe", 1, "Kaya", null, 103L },
-                    { 4L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 9, 30, 19, 15, 52, 396, DateTimeKind.Local).AddTicks(3896), null, "ali.celik@ofismerkezi.com", "98765432104", "+905551234570", "Ali", 1, "Çelik", null, 104L },
-                    { 5L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 9, 30, 19, 15, 52, 396, DateTimeKind.Local).AddTicks(3897), null, "fatma.yurt@kirtasiyevi.com", "98765432105", "+905551234571", "Fatma", 1, "Yurt", null, 105L }
+                    { 1L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(8460), null, "ahmet.yilmaz@kirtasiyemerkezi.com", "98765432101", "+905551234567", "Ahmet", 1, "Yılmaz", null, 101L },
+                    { 2L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(8500), null, "mehmet.demir@ofismalzemeleri.com", "98765432102", "+905551234568", "Mehmet", 1, "Demir", null, 102L },
+                    { 3L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(8510), null, "ayse.kaya@kirtasiyedunyasi.com", "98765432103", "+905551234569", "Ayşe", 1, "Kaya", null, 103L },
+                    { 4L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(8510), null, "ali.celik@ofismerkezi.com", "98765432104", "+905551234570", "Ali", 1, "Çelik", null, 104L },
+                    { 5L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(8510), null, "fatma.yurt@kirtasiyevi.com", "98765432105", "+905551234571", "Fatma", 1, "Yurt", null, 105L }
                 });
 
             migrationBuilder.CreateIndex(
