@@ -22,7 +22,8 @@ public class ProductController (IProductService productService) : ControllerBase
                 ProductCode = x.ProductCode,
                 ProductName = x.ProductName,
                 ProductPrice = x.ProductPrice,
-                Stock = x.Stock
+                Stock = x.Stock,
+                CategoryCode = x.CategoryCode
             },
             where: x => x.Status != Status.Passive,
             orderBy: x => x.OrderByDescending(z => z.CreatedDate)
@@ -31,12 +32,21 @@ public class ProductController (IProductService productService) : ControllerBase
         return Ok(productList);
     }
 
-    [HttpGet("GetProduct")]
-    public async Task<IActionResult> GetProduct([FromQuery] Int64 productCode)
+    [HttpGet("GetProduct/{id}")]
+    public async Task<IActionResult> GetProduct(string id)
     {
-        
-        var product = await productService.GetByIdAsync<GetAllProductDto>(x=> x.ProductCode == productCode);
-    
+        if (string.IsNullOrWhiteSpace(id))
+        {
+            return BadRequest("Product ID is required.");
+        }
+
+        if (!long.TryParse(id, out long productCode))
+        {
+            return BadRequest("Invalid Product ID format.");
+        }
+
+        var product = await productService.GetByIdAsync<GetAllProductDto>(x => x.ProductCode == productCode);
+
         if (product == null)
         {
             return NotFound(); // Ürün bulunamazsa 404 döndür

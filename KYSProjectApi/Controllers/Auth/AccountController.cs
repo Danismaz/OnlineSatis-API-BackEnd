@@ -204,7 +204,7 @@ namespace KYSProjectApi.Controllers.Auth
 
 
         [HttpPost("logout")]
-        public IActionResult Logout([FromForm] string token)
+        public IActionResult Logout([FromBody] string token)
         {
             if (string.IsNullOrWhiteSpace(token))
             {

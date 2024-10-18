@@ -44,6 +44,8 @@ namespace Business.AutoMapper
 
 
             CreateMap<Product, GetAllProductDto>().ReverseMap();
+
+            CreateMap<Shipper, GetAllShipperDto>().ReverseMap();
         }
     }
 }

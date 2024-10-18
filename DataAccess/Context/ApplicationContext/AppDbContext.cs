@@ -68,6 +68,7 @@ namespace DataAccess.Context.ApplicationContext
             modelBuilder.ApplyConfiguration(new UserSeedData());
             modelBuilder.ApplyConfiguration(new CategorySeedData());
             modelBuilder.ApplyConfiguration(new ProductSeedData());
+            modelBuilder.ApplyConfiguration(new ShipperSeedData());
 
             base.OnModelCreating(modelBuilder);
         }
