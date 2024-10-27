@@ -4,6 +4,7 @@ using Business.ActionFilters;
 using Business.Responce;
 using Business.Sevices.Interfaces;
 using DataTransfer.Concrete;
+using Entities.Consts;
 using KYSProjectApi.Models;
 using KYSProjectApi.Services.TCKimlikService;
 using KYSProjectApi.Services.Token;
@@ -128,7 +129,7 @@ namespace KYSProjectApi.Controllers.Auth
                 var resultUserDetail = await userDetailService.AddAsync(userRegister);
                 if (!resultUserDetail)
                     return BadRequest(new { Message = "Kullanıcı eklenemedi. Tekrar Deneyiniz." });
-                
+
                 await emailService.SendWelcomeEmail(mapper.Map<UserForRegisterModel>(model));
 
                 return Ok(new { Message = "Kullanıcı başarılı bir şekilde kayıt edildi. Giriş yapabilirsiniz." });
@@ -152,10 +153,10 @@ namespace KYSProjectApi.Controllers.Auth
                     StatusCode = 404,
                     Message = "Token request'de bulunamadı.",
                     Data = null,
-                        
+
                 });
             }
-            
+
             var isValidToken = tokenService.ValidateTokenAsync(token);
             if (!isValidToken)
                 return Unauthorized(new Response<string>
@@ -257,10 +258,10 @@ namespace KYSProjectApi.Controllers.Auth
                     StatusCode = 404,
                     Message = "Token request'de bulunamadı.",
                     Data = null,
-                        
+
                 });
             }
-            
+
             // Token'ın geçerli olup olmadığını kontrol et
             var isValidToken = tokenService.ValidateTokenAsync(token);
             if (!isValidToken)
@@ -358,6 +359,7 @@ namespace KYSProjectApi.Controllers.Auth
             {
                 return BadRequest(new { message = "Kullanıcı Maili gerekli." });
             }
+
             await twoFactorAuthService.SendVerificationCodeAsync(email);
             return Ok(new
             {
@@ -367,6 +369,39 @@ namespace KYSProjectApi.Controllers.Auth
                 Data = "" // Data özelliği, burada `null` olabilir
             });
         }
-        
+
+        [HttpPost("Confirm2FACode")]
+        public async Task<IActionResult> Confirm2FACode([FromBody] string userEmail)
+        {
+            // E-posta boşsa BadRequest döndür
+            if (string.IsNullOrWhiteSpace(userEmail))
+            {
+                return BadRequest("E-posta adresi boş olamaz.");
+            }
+
+            // Kullanıcıyı e-posta ile al
+            var user = await userService.GetByEmailAsync<GetUserDto>(x =>
+                x.Email == userEmail && x.Status != Status.Passive);
+
+            // Eğer kullanıcı bulunamadıysa hata döndür
+            if (user == null)
+            {
+                return NotFound("Kullanıcı bulunamadı.");
+            }
+
+            // TwoFactorEnabled durumunu değiştir
+            user.TwoFactorEnabled = !user.TwoFactorEnabled;
+
+            // Değişiklikleri veritabanına kaydet
+            var updateResult = await userService.UpdateAsync(user);
+
+            if (!updateResult)
+            {
+                return StatusCode(500, "Kullanıcı durumu güncellenirken bir hata oluştu.");
+            }
+
+            // Başarılı bir şekilde güncellendiğini belirt
+            return Ok(new { TwoFactorEnabled = user.TwoFactorEnabled });
+        }
     }
 }

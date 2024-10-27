@@ -52,6 +52,38 @@ namespace DataAccess.Context.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Product",
+                columns: table => new
+                {
+                    ProductCode = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    ProductName = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
+                    ProductPrice = table.Column<decimal>(type: "numeric", nullable: false),
+                    Stock = table.Column<int>(type: "integer", nullable: false),
+                    CategoryCode = table.Column<long>(type: "bigint", nullable: false),
+                    ShipperCode = table.Column<int>(type: "integer", nullable: true),
+                    CreatedDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: false),
+                    UpdatedDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true),
+                    DeletedDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true),
+                    Status = table.Column<int>(type: "integer", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Product", x => x.ProductCode);
+                    table.ForeignKey(
+                        name: "FK_Product_Category_CategoryCode",
+                        column: x => x.CategoryCode,
+                        principalTable: "Category",
+                        principalColumn: "CategoryCode",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Product_Shipper_ShipperCode",
+                        column: x => x.ShipperCode,
+                        principalTable: "Shipper",
+                        principalColumn: "ShipperCode");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Order",
                 columns: table => new
                 {
@@ -85,6 +117,7 @@ namespace DataAccess.Context.Migrations
                     Price = table.Column<decimal>(type: "numeric", nullable: false),
                     Quantity = table.Column<int>(type: "integer", nullable: false),
                     OrderCode = table.Column<long>(type: "bigint", nullable: false),
+                    ProductCode = table.Column<long>(type: "bigint", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: false),
                     UpdatedDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true),
                     DeletedDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true),
@@ -99,44 +132,12 @@ namespace DataAccess.Context.Migrations
                         principalTable: "Order",
                         principalColumn: "OrderCode",
                         onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Product",
-                columns: table => new
-                {
-                    ProductCode = table.Column<long>(type: "bigint", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    ProductName = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
-                    ProductPrice = table.Column<decimal>(type: "numeric", nullable: false),
-                    Stock = table.Column<int>(type: "integer", nullable: false),
-                    CategoryCode = table.Column<long>(type: "bigint", nullable: false),
-                    OrderDetailCode = table.Column<long>(type: "bigint", nullable: true),
-                    ShipperCode = table.Column<int>(type: "integer", nullable: true),
-                    CreatedDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: false),
-                    UpdatedDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true),
-                    DeletedDate = table.Column<DateTime>(type: "timestamp without time zone", nullable: true),
-                    Status = table.Column<int>(type: "integer", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Product", x => x.ProductCode);
                     table.ForeignKey(
-                        name: "FK_Product_Category_CategoryCode",
-                        column: x => x.CategoryCode,
-                        principalTable: "Category",
-                        principalColumn: "CategoryCode",
+                        name: "FK_OrderDetail_Product_ProductCode",
+                        column: x => x.ProductCode,
+                        principalTable: "Product",
+                        principalColumn: "ProductCode",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Product_OrderDetail_OrderDetailCode",
-                        column: x => x.OrderDetailCode,
-                        principalTable: "OrderDetail",
-                        principalColumn: "OrderDetailCode");
-                    table.ForeignKey(
-                        name: "FK_Product_Shipper_ShipperCode",
-                        column: x => x.ShipperCode,
-                        principalTable: "Shipper",
-                        principalColumn: "ShipperCode");
                 });
 
             migrationBuilder.CreateTable(
@@ -218,11 +219,23 @@ namespace DataAccess.Context.Migrations
                 columns: new[] { "CategoryCode", "CategoryDescription", "CategoryName", "CreatedDate", "DeletedDate", "Status", "UpdatedDate" },
                 values: new object[,]
                 {
-                    { 1L, "Farklı türde kalemler.", "Kalemler", new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9660), null, 1, null },
-                    { 2L, "Çeşitli defter türleri.", "Defterler", new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9660), null, 1, null },
-                    { 3L, "Ofis için gerekli malzemeler.", "Ofis Malzemeleri", new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9660), null, 1, null },
-                    { 4L, "Resim ve sanat malzemeleri.", "Sanat Malzemeleri", new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9660), null, 1, null },
-                    { 5L, "Farklı tür yapıştırıcılar.", "Yapıştırıcılar", new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9670), null, 1, null }
+                    { 1L, "Farklı türde kalemler.", "Kalemler", new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5460), null, 1, null },
+                    { 2L, "Çeşitli defter türleri.", "Defterler", new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5460), null, 1, null },
+                    { 3L, "Ofis için gerekli malzemeler.", "Ofis Malzemeleri", new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5460), null, 1, null },
+                    { 4L, "Resim ve sanat malzemeleri.", "Sanat Malzemeleri", new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5470), null, 1, null },
+                    { 5L, "Farklı tür yapıştırıcılar.", "Yapıştırıcılar", new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5470), null, 1, null }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Shipper",
+                columns: new[] { "ShipperCode", "CreatedDate", "DeletedDate", "DeliveryTime", "Price", "ShipperName", "Status", "UpdatedDate" },
+                values: new object[,]
+                {
+                    { 1, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5830), null, "1-2 gün", 15.99m, "Aras Kargo", 1, null },
+                    { 2, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5840), null, "2-3 gün", 12.50m, "Yurtiçi Kargo", 1, null },
+                    { 3, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5840), null, "1 gün", 20.00m, "Kolay Gelsin", 1, null },
+                    { 4, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5840), null, "3-5 days", 10.75m, "MNG Kargo", 1, null },
+                    { 5, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5850), null, "5-7 gün", 25.00m, "Ptt Kargo", 1, null }
                 });
 
             migrationBuilder.InsertData(
@@ -230,41 +243,41 @@ namespace DataAccess.Context.Migrations
                 columns: new[] { "UserRoleCode", "CreatedDate", "DeletedDate", "RoleDescription", "Status", "UpdatedDate", "UserCode" },
                 values: new object[,]
                 {
-                    { 1L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(8690), null, "Admin", 1, null, null },
-                    { 2L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(8690), null, "Yönetici", 1, null, null },
-                    { 3L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(8700), null, "Kullanici", 1, null, null }
+                    { 1L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(4350), null, "Admin", 1, null, null },
+                    { 2L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(4350), null, "Yönetici", 1, null, null },
+                    { 3L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(4350), null, "Kullanici", 1, null, null }
                 });
 
             migrationBuilder.InsertData(
                 table: "Product",
-                columns: new[] { "ProductCode", "CategoryCode", "CreatedDate", "DeletedDate", "OrderDetailCode", "ProductName", "ProductPrice", "ShipperCode", "Status", "Stock", "UpdatedDate" },
+                columns: new[] { "ProductCode", "CategoryCode", "CreatedDate", "DeletedDate", "ProductName", "ProductPrice", "ShipperCode", "Status", "Stock", "UpdatedDate" },
                 values: new object[,]
                 {
-                    { 1L, 1L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9800), null, null, "Kurşun Kalem", 40m, null, 1, 100, null },
-                    { 2L, 1L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9810), null, null, "Mavi Renkli Kalem", 80m, null, 1, 80, null },
-                    { 3L, 1L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9810), null, null, "Kırmızı Jel Kalem", 90m, null, 1, 60, null },
-                    { 4L, 1L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9820), null, null, "Siyah Mürekkep Kalem", 100m, null, 1, 40, null },
-                    { 5L, 1L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9820), null, null, "Renkli Silgi", 25m, null, 1, 120, null },
-                    { 6L, 2L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9820), null, null, "A5 Kırmızı Defter", 150m, null, 1, 200, null },
-                    { 7L, 2L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9820), null, null, "A4 Beyaz Defter", 85m, null, 1, 150, null },
-                    { 8L, 2L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9830), null, null, "Kareli Defter", 120m, null, 1, 100, null },
-                    { 9L, 2L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9830), null, null, "Çizgili Defter", 120m, null, 1, 90, null },
-                    { 10L, 2L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9830), null, null, "Sert Kapaklı Defter", 160m, null, 1, 50, null },
-                    { 11L, 3L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9830), null, null, "Zımba Makinesi", 90m, null, 1, 30, null },
-                    { 12L, 3L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9840), null, null, "Bant Dispenseri", 45m, null, 1, 70, null },
-                    { 13L, 3L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9840), null, null, "Makas", 55m, null, 1, 40, null },
-                    { 14L, 3L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9840), null, null, "Post-it Notlar", 75m, null, 1, 200, null },
-                    { 15L, 3L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9850), null, null, "Kalemtraş", 20m, null, 1, 100, null },
-                    { 16L, 4L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9850), null, null, "Akrilik Boya Seti", 165m, null, 1, 20, null },
-                    { 17L, 4L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9850), null, null, "Su Renkleri Seti", 145m, null, 1, 30, null },
-                    { 18L, 4L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9850), null, null, "Fırça Seti", 110m, null, 1, 25, null },
-                    { 19L, 4L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9860), null, null, "Çizim Defteri", 85m, null, 1, 40, null },
-                    { 20L, 4L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9860), null, null, "Sanat Paleti", 55m, null, 1, 50, null },
-                    { 21L, 5L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9860), null, null, "Sıvı Yapıştırıcı", 35m, null, 1, 60, null },
-                    { 22L, 5L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9870), null, null, "Bantlı Yapıştırıcı", 30m, null, 1, 90, null },
-                    { 23L, 5L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9870), null, null, "Hot Melt Yapıştırıcı", 80m, null, 1, 30, null },
-                    { 24L, 5L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9870), null, null, "Yapıştırıcı Stik", 75m, null, 1, 120, null },
-                    { 25L, 5L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9870), null, null, "Modeller İçin Yapıştırıcı", 55m, null, 1, 40, null }
+                    { 1L, 1L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5560), null, "Kurşun Kalem", 40m, null, 1, 100, null },
+                    { 2L, 1L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5560), null, "Mavi Renkli Kalem", 80m, null, 1, 80, null },
+                    { 3L, 1L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5570), null, "Kırmızı Jel Kalem", 90m, null, 1, 60, null },
+                    { 4L, 1L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5570), null, "Siyah Mürekkep Kalem", 100m, null, 1, 40, null },
+                    { 5L, 1L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5570), null, "Renkli Silgi", 25m, null, 1, 120, null },
+                    { 6L, 2L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5580), null, "A5 Kırmızı Defter", 150m, null, 1, 200, null },
+                    { 7L, 2L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5580), null, "A4 Beyaz Defter", 85m, null, 1, 150, null },
+                    { 8L, 2L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5590), null, "Kareli Defter", 120m, null, 1, 100, null },
+                    { 9L, 2L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5590), null, "Çizgili Defter", 120m, null, 1, 90, null },
+                    { 10L, 2L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5590), null, "Sert Kapaklı Defter", 160m, null, 1, 50, null },
+                    { 11L, 3L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5590), null, "Zımba Makinesi", 90m, null, 1, 30, null },
+                    { 12L, 3L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5600), null, "Bant Dispenseri", 45m, null, 1, 70, null },
+                    { 13L, 3L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5600), null, "Makas", 55m, null, 1, 40, null },
+                    { 14L, 3L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5600), null, "Post-it Notlar", 75m, null, 1, 200, null },
+                    { 15L, 3L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5610), null, "Kalemtraş", 20m, null, 1, 100, null },
+                    { 16L, 4L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5610), null, "Akrilik Boya Seti", 165m, null, 1, 20, null },
+                    { 17L, 4L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5610), null, "Su Renkleri Seti", 145m, null, 1, 30, null },
+                    { 18L, 4L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5610), null, "Fırça Seti", 110m, null, 1, 25, null },
+                    { 19L, 4L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5620), null, "Çizim Defteri", 85m, null, 1, 40, null },
+                    { 20L, 4L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5620), null, "Sanat Paleti", 55m, null, 1, 50, null },
+                    { 21L, 5L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5620), null, "Sıvı Yapıştırıcı", 35m, null, 1, 60, null },
+                    { 22L, 5L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5630), null, "Bantlı Yapıştırıcı", 30m, null, 1, 90, null },
+                    { 23L, 5L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5630), null, "Hot Melt Yapıştırıcı", 80m, null, 1, 30, null },
+                    { 24L, 5L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5630), null, "Yapıştırıcı Stik", 75m, null, 1, 120, null },
+                    { 25L, 5L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5630), null, "Modeller İçin Yapıştırıcı", 55m, null, 1, 40, null }
                 });
 
             migrationBuilder.InsertData(
@@ -272,11 +285,11 @@ namespace DataAccess.Context.Migrations
                 columns: new[] { "UserCode", "CreatedDate", "DeletedDate", "Email", "MobilePhone", "PasswordHash", "PasswordSalt", "Status", "TwoFactorEnabled", "UpdatedDate", "UserRoleCode" },
                 values: new object[,]
                 {
-                    { 101L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9540), null, "john.doe@example.com", "+905551234567", new byte[] { 94, 255, 97, 212, 21, 192, 39, 47, 239, 5, 84, 50, 230, 174, 113, 97, 209, 156, 167, 232, 180, 15, 248, 188, 212, 186, 246, 133, 243, 58, 41, 116, 188, 16, 90, 62, 14, 59, 37, 137, 191, 15, 216, 135, 174, 167, 81, 204, 29, 6, 52, 41, 57, 137, 35, 206, 173, 229, 216, 200, 109, 103, 11, 232 }, new byte[] { 7, 68, 170, 201, 155, 159, 12, 116, 220, 242, 229, 181, 181, 103, 195, 23 }, 1, false, null, 1L },
-                    { 102L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9550), null, "jane.doe@example.com", "+905551234568", new byte[] { 94, 255, 97, 212, 21, 192, 39, 47, 239, 5, 84, 50, 230, 174, 113, 97, 209, 156, 167, 232, 180, 15, 248, 188, 212, 186, 246, 133, 243, 58, 41, 116, 188, 16, 90, 62, 14, 59, 37, 137, 191, 15, 216, 135, 174, 167, 81, 204, 29, 6, 52, 41, 57, 137, 35, 206, 173, 229, 216, 200, 109, 103, 11, 232 }, new byte[] { 7, 68, 170, 201, 155, 159, 12, 116, 220, 242, 229, 181, 181, 103, 195, 23 }, 1, false, null, 2L },
-                    { 103L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9550), null, "alice.smith@example.com", "+905551234569", new byte[] { 94, 255, 97, 212, 21, 192, 39, 47, 239, 5, 84, 50, 230, 174, 113, 97, 209, 156, 167, 232, 180, 15, 248, 188, 212, 186, 246, 133, 243, 58, 41, 116, 188, 16, 90, 62, 14, 59, 37, 137, 191, 15, 216, 135, 174, 167, 81, 204, 29, 6, 52, 41, 57, 137, 35, 206, 173, 229, 216, 200, 109, 103, 11, 232 }, new byte[] { 7, 68, 170, 201, 155, 159, 12, 116, 220, 242, 229, 181, 181, 103, 195, 23 }, 1, false, null, 3L },
-                    { 104L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9550), null, "bob.johnson@example.com", "+905551234570", new byte[] { 94, 255, 97, 212, 21, 192, 39, 47, 239, 5, 84, 50, 230, 174, 113, 97, 209, 156, 167, 232, 180, 15, 248, 188, 212, 186, 246, 133, 243, 58, 41, 116, 188, 16, 90, 62, 14, 59, 37, 137, 191, 15, 216, 135, 174, 167, 81, 204, 29, 6, 52, 41, 57, 137, 35, 206, 173, 229, 216, 200, 109, 103, 11, 232 }, new byte[] { 7, 68, 170, 201, 155, 159, 12, 116, 220, 242, 229, 181, 181, 103, 195, 23 }, 1, false, null, 3L },
-                    { 105L, new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(9560), null, "carol.davis@example.com", "+905551234571", new byte[] { 94, 255, 97, 212, 21, 192, 39, 47, 239, 5, 84, 50, 230, 174, 113, 97, 209, 156, 167, 232, 180, 15, 248, 188, 212, 186, 246, 133, 243, 58, 41, 116, 188, 16, 90, 62, 14, 59, 37, 137, 191, 15, 216, 135, 174, 167, 81, 204, 29, 6, 52, 41, 57, 137, 35, 206, 173, 229, 216, 200, 109, 103, 11, 232 }, new byte[] { 7, 68, 170, 201, 155, 159, 12, 116, 220, 242, 229, 181, 181, 103, 195, 23 }, 1, false, null, 3L }
+                    { 101L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5320), null, "john.doe@example.com", "+905551234567", new byte[] { 90, 66, 34, 134, 234, 196, 7, 215, 242, 207, 64, 35, 171, 183, 79, 203, 50, 239, 252, 14, 37, 211, 37, 117, 129, 144, 144, 159, 134, 246, 79, 65, 157, 110, 133, 253, 116, 181, 161, 147, 11, 16, 72, 211, 41, 150, 186, 89, 127, 253, 245, 192, 67, 13, 140, 253, 193, 227, 82, 64, 142, 222, 178, 202 }, new byte[] { 223, 55, 162, 243, 165, 161, 203, 190, 106, 228, 9, 201, 221, 117, 116, 117 }, 1, false, null, 1L },
+                    { 102L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5330), null, "jane.doe@example.com", "+905551234568", new byte[] { 90, 66, 34, 134, 234, 196, 7, 215, 242, 207, 64, 35, 171, 183, 79, 203, 50, 239, 252, 14, 37, 211, 37, 117, 129, 144, 144, 159, 134, 246, 79, 65, 157, 110, 133, 253, 116, 181, 161, 147, 11, 16, 72, 211, 41, 150, 186, 89, 127, 253, 245, 192, 67, 13, 140, 253, 193, 227, 82, 64, 142, 222, 178, 202 }, new byte[] { 223, 55, 162, 243, 165, 161, 203, 190, 106, 228, 9, 201, 221, 117, 116, 117 }, 1, false, null, 2L },
+                    { 103L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5330), null, "alice.smith@example.com", "+905551234569", new byte[] { 90, 66, 34, 134, 234, 196, 7, 215, 242, 207, 64, 35, 171, 183, 79, 203, 50, 239, 252, 14, 37, 211, 37, 117, 129, 144, 144, 159, 134, 246, 79, 65, 157, 110, 133, 253, 116, 181, 161, 147, 11, 16, 72, 211, 41, 150, 186, 89, 127, 253, 245, 192, 67, 13, 140, 253, 193, 227, 82, 64, 142, 222, 178, 202 }, new byte[] { 223, 55, 162, 243, 165, 161, 203, 190, 106, 228, 9, 201, 221, 117, 116, 117 }, 1, false, null, 3L },
+                    { 104L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5330), null, "bob.johnson@example.com", "+905551234570", new byte[] { 90, 66, 34, 134, 234, 196, 7, 215, 242, 207, 64, 35, 171, 183, 79, 203, 50, 239, 252, 14, 37, 211, 37, 117, 129, 144, 144, 159, 134, 246, 79, 65, 157, 110, 133, 253, 116, 181, 161, 147, 11, 16, 72, 211, 41, 150, 186, 89, 127, 253, 245, 192, 67, 13, 140, 253, 193, 227, 82, 64, 142, 222, 178, 202 }, new byte[] { 223, 55, 162, 243, 165, 161, 203, 190, 106, 228, 9, 201, 221, 117, 116, 117 }, 1, false, null, 3L },
+                    { 105L, new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(5340), null, "carol.davis@example.com", "+905551234571", new byte[] { 90, 66, 34, 134, 234, 196, 7, 215, 242, 207, 64, 35, 171, 183, 79, 203, 50, 239, 252, 14, 37, 211, 37, 117, 129, 144, 144, 159, 134, 246, 79, 65, 157, 110, 133, 253, 116, 181, 161, 147, 11, 16, 72, 211, 41, 150, 186, 89, 127, 253, 245, 192, 67, 13, 140, 253, 193, 227, 82, 64, 142, 222, 178, 202 }, new byte[] { 223, 55, 162, 243, 165, 161, 203, 190, 106, 228, 9, 201, 221, 117, 116, 117 }, 1, false, null, 3L }
                 });
 
             migrationBuilder.InsertData(
@@ -284,11 +297,11 @@ namespace DataAccess.Context.Migrations
                 columns: new[] { "UserDetailCode", "BirthDate", "CreatedDate", "DeletedDate", "Email", "IdentityNumber", "MobilePhone", "Name", "Status", "Surname", "UpdatedDate", "UserCode" },
                 values: new object[,]
                 {
-                    { 1L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(8460), null, "ahmet.yilmaz@kirtasiyemerkezi.com", "98765432101", "+905551234567", "Ahmet", 1, "Yılmaz", null, 101L },
-                    { 2L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(8500), null, "mehmet.demir@ofismalzemeleri.com", "98765432102", "+905551234568", "Mehmet", 1, "Demir", null, 102L },
-                    { 3L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(8510), null, "ayse.kaya@kirtasiyedunyasi.com", "98765432103", "+905551234569", "Ayşe", 1, "Kaya", null, 103L },
-                    { 4L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(8510), null, "ali.celik@ofismerkezi.com", "98765432104", "+905551234570", "Ali", 1, "Çelik", null, 104L },
-                    { 5L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 9, 30, 19, 35, 27, 300, DateTimeKind.Local).AddTicks(8510), null, "fatma.yurt@kirtasiyevi.com", "98765432105", "+905551234571", "Fatma", 1, "Yurt", null, 105L }
+                    { 1L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(4110), null, "ahmet.yilmaz@kirtasiyemerkezi.com", "98765432101", "+905551234567", "Ahmet", 1, "Yılmaz", null, 101L },
+                    { 2L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(4160), null, "mehmet.demir@ofismalzemeleri.com", "98765432102", "+905551234568", "Mehmet", 1, "Demir", null, 102L },
+                    { 3L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(4160), null, "ayse.kaya@kirtasiyedunyasi.com", "98765432103", "+905551234569", "Ayşe", 1, "Kaya", null, 103L },
+                    { 4L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(4160), null, "ali.celik@ofismerkezi.com", "98765432104", "+905551234570", "Ali", 1, "Çelik", null, 104L },
+                    { 5L, new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 10, 22, 14, 16, 26, 193, DateTimeKind.Local).AddTicks(4170), null, "fatma.yurt@kirtasiyevi.com", "98765432105", "+905551234571", "Fatma", 1, "Yurt", null, 105L }
                 });
 
             migrationBuilder.CreateIndex(
@@ -307,14 +320,14 @@ namespace DataAccess.Context.Migrations
                 column: "OrderCode");
 
             migrationBuilder.CreateIndex(
+                name: "IX_OrderDetail_ProductCode",
+                table: "OrderDetail",
+                column: "ProductCode");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Product_CategoryCode",
                 table: "Product",
                 column: "CategoryCode");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Product_OrderDetailCode",
-                table: "Product",
-                column: "OrderDetailCode");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Product_ShipperCode",
@@ -386,19 +399,19 @@ namespace DataAccess.Context.Migrations
                 table: "UserRole");
 
             migrationBuilder.DropTable(
-                name: "Product");
+                name: "OrderDetail");
 
             migrationBuilder.DropTable(
                 name: "UserDetail");
 
             migrationBuilder.DropTable(
-                name: "Category");
-
-            migrationBuilder.DropTable(
-                name: "OrderDetail");
-
-            migrationBuilder.DropTable(
                 name: "Order");
+
+            migrationBuilder.DropTable(
+                name: "Product");
+
+            migrationBuilder.DropTable(
+                name: "Category");
 
             migrationBuilder.DropTable(
                 name: "Shipper");

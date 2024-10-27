@@ -32,10 +32,9 @@ namespace Entities.Entites.Concrete
 
         [Required] public bool TwoFactorEnabled { get; set; } = false;
 
+        [ForeignKey("UserRoleCode")]
         public UserRole UserRole { get; set; }
         public UserDetail UserDetail { get; set; }
-
-        public ICollection<UserRole> UserRoles { get; set; }
 
     }
 }

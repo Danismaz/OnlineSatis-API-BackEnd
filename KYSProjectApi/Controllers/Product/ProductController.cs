@@ -9,7 +9,6 @@ namespace KYSProjectApi.Controllers.Product;
 [ApiController]
 public class ProductController (IProductService productService) : ControllerBase
 {
-    
     [HttpGet ("GetAllProduct")]
     public async Task<IActionResult> GetAllProduct()
     {
@@ -45,7 +44,28 @@ public class ProductController (IProductService productService) : ControllerBase
             return BadRequest("Invalid Product ID format.");
         }
 
-        var product = await productService.GetByIdAsync<GetAllProductDto>(x => x.ProductCode == productCode);
+        var product = await productService.GetByIdAsync<GetAllProductDto>(x => x.ProductCode == productCode && x.Status != Status.Passive);
+
+        if (product == null)
+        {
+            return NotFound(); // Ürün bulunamazsa 404 döndür
+        }
+
+        return Ok(product);
+    }
+
+    [HttpGet("GetProductsByCategory/{id}")]
+    public async Task<IActionResult> GetProductsByCategory(string id)
+    {
+        if (string.IsNullOrWhiteSpace(id))
+        {
+            return BadRequest("Category ID is required.");
+        }
+        if (!long.TryParse(id, out long categoryCode))
+        {
+            return BadRequest("Invalid Category ID format.");
+        }
+        var product = await productService.GetByDefaultListAsync<GetAllProductDto>(x => x.CategoryCode == categoryCode && x.Status != Status.Passive);
 
         if (product == null)
         {

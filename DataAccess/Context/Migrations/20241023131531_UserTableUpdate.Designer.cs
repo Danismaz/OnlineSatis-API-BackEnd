@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DataAccess.Context.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241017131514_AddedShipperSeedData")]
-    partial class AddedShipperSeedData
+    [Migration("20241023131531_UserTableUpdate")]
+    partial class UserTableUpdate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -63,7 +63,7 @@ namespace DataAccess.Context.Migrations
                             CategoryCode = 1L,
                             CategoryDescription = "Farklı türde kalemler.",
                             CategoryName = "Kalemler",
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4100),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4170),
                             Status = 1
                         },
                         new
@@ -71,7 +71,7 @@ namespace DataAccess.Context.Migrations
                             CategoryCode = 2L,
                             CategoryDescription = "Çeşitli defter türleri.",
                             CategoryName = "Defterler",
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4110),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4170),
                             Status = 1
                         },
                         new
@@ -79,7 +79,7 @@ namespace DataAccess.Context.Migrations
                             CategoryCode = 3L,
                             CategoryDescription = "Ofis için gerekli malzemeler.",
                             CategoryName = "Ofis Malzemeleri",
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4110),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4180),
                             Status = 1
                         },
                         new
@@ -87,7 +87,7 @@ namespace DataAccess.Context.Migrations
                             CategoryCode = 4L,
                             CategoryDescription = "Resim ve sanat malzemeleri.",
                             CategoryName = "Sanat Malzemeleri",
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4110),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4180),
                             Status = 1
                         },
                         new
@@ -95,7 +95,7 @@ namespace DataAccess.Context.Migrations
                             CategoryCode = 5L,
                             CategoryDescription = "Farklı tür yapıştırıcılar.",
                             CategoryName = "Yapıştırıcılar",
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4110),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4180),
                             Status = 1
                         });
                 });
@@ -158,6 +158,9 @@ namespace DataAccess.Context.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("numeric");
 
+                    b.Property<long>("ProductCode")
+                        .HasColumnType("bigint");
+
                     b.Property<int>("Quantity")
                         .HasColumnType("integer");
 
@@ -170,6 +173,8 @@ namespace DataAccess.Context.Migrations
                     b.HasKey("OrderDetailCode");
 
                     b.HasIndex("OrderCode");
+
+                    b.HasIndex("ProductCode");
 
                     b.ToTable("OrderDetail");
                 });
@@ -190,9 +195,6 @@ namespace DataAccess.Context.Migrations
 
                     b.Property<DateTime?>("DeletedDate")
                         .HasColumnType("timestamp without time zone");
-
-                    b.Property<long?>("OrderDetailCode")
-                        .HasColumnType("bigint");
 
                     b.Property<string>("ProductName")
                         .IsRequired()
@@ -218,8 +220,6 @@ namespace DataAccess.Context.Migrations
 
                     b.HasIndex("CategoryCode");
 
-                    b.HasIndex("OrderDetailCode");
-
                     b.HasIndex("ShipperCode");
 
                     b.ToTable("Product");
@@ -229,7 +229,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 1L,
                             CategoryCode = 1L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4160),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4260),
                             ProductName = "Kurşun Kalem",
                             ProductPrice = 40m,
                             Status = 1,
@@ -239,7 +239,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 2L,
                             CategoryCode = 1L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4170),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4270),
                             ProductName = "Mavi Renkli Kalem",
                             ProductPrice = 80m,
                             Status = 1,
@@ -249,7 +249,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 3L,
                             CategoryCode = 1L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4170),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4270),
                             ProductName = "Kırmızı Jel Kalem",
                             ProductPrice = 90m,
                             Status = 1,
@@ -259,7 +259,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 4L,
                             CategoryCode = 1L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4170),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4270),
                             ProductName = "Siyah Mürekkep Kalem",
                             ProductPrice = 100m,
                             Status = 1,
@@ -269,7 +269,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 5L,
                             CategoryCode = 1L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4180),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4280),
                             ProductName = "Renkli Silgi",
                             ProductPrice = 25m,
                             Status = 1,
@@ -279,7 +279,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 6L,
                             CategoryCode = 2L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4180),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4280),
                             ProductName = "A5 Kırmızı Defter",
                             ProductPrice = 150m,
                             Status = 1,
@@ -289,7 +289,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 7L,
                             CategoryCode = 2L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4180),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4280),
                             ProductName = "A4 Beyaz Defter",
                             ProductPrice = 85m,
                             Status = 1,
@@ -299,7 +299,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 8L,
                             CategoryCode = 2L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4180),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4290),
                             ProductName = "Kareli Defter",
                             ProductPrice = 120m,
                             Status = 1,
@@ -309,7 +309,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 9L,
                             CategoryCode = 2L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4180),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4290),
                             ProductName = "Çizgili Defter",
                             ProductPrice = 120m,
                             Status = 1,
@@ -319,7 +319,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 10L,
                             CategoryCode = 2L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4180),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4290),
                             ProductName = "Sert Kapaklı Defter",
                             ProductPrice = 160m,
                             Status = 1,
@@ -329,7 +329,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 11L,
                             CategoryCode = 3L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4190),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4290),
                             ProductName = "Zımba Makinesi",
                             ProductPrice = 90m,
                             Status = 1,
@@ -339,7 +339,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 12L,
                             CategoryCode = 3L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4190),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4300),
                             ProductName = "Bant Dispenseri",
                             ProductPrice = 45m,
                             Status = 1,
@@ -349,7 +349,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 13L,
                             CategoryCode = 3L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4190),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4300),
                             ProductName = "Makas",
                             ProductPrice = 55m,
                             Status = 1,
@@ -359,7 +359,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 14L,
                             CategoryCode = 3L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4190),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4300),
                             ProductName = "Post-it Notlar",
                             ProductPrice = 75m,
                             Status = 1,
@@ -369,7 +369,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 15L,
                             CategoryCode = 3L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4190),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4300),
                             ProductName = "Kalemtraş",
                             ProductPrice = 20m,
                             Status = 1,
@@ -379,7 +379,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 16L,
                             CategoryCode = 4L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4190),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4310),
                             ProductName = "Akrilik Boya Seti",
                             ProductPrice = 165m,
                             Status = 1,
@@ -389,7 +389,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 17L,
                             CategoryCode = 4L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4200),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4310),
                             ProductName = "Su Renkleri Seti",
                             ProductPrice = 145m,
                             Status = 1,
@@ -399,7 +399,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 18L,
                             CategoryCode = 4L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4200),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4310),
                             ProductName = "Fırça Seti",
                             ProductPrice = 110m,
                             Status = 1,
@@ -409,7 +409,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 19L,
                             CategoryCode = 4L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4200),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4320),
                             ProductName = "Çizim Defteri",
                             ProductPrice = 85m,
                             Status = 1,
@@ -419,7 +419,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 20L,
                             CategoryCode = 4L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4200),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4320),
                             ProductName = "Sanat Paleti",
                             ProductPrice = 55m,
                             Status = 1,
@@ -429,7 +429,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 21L,
                             CategoryCode = 5L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4200),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4320),
                             ProductName = "Sıvı Yapıştırıcı",
                             ProductPrice = 35m,
                             Status = 1,
@@ -439,7 +439,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 22L,
                             CategoryCode = 5L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4200),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4320),
                             ProductName = "Bantlı Yapıştırıcı",
                             ProductPrice = 30m,
                             Status = 1,
@@ -449,7 +449,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 23L,
                             CategoryCode = 5L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4210),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4330),
                             ProductName = "Hot Melt Yapıştırıcı",
                             ProductPrice = 80m,
                             Status = 1,
@@ -459,7 +459,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 24L,
                             CategoryCode = 5L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4210),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4330),
                             ProductName = "Yapıştırıcı Stik",
                             ProductPrice = 75m,
                             Status = 1,
@@ -469,7 +469,7 @@ namespace DataAccess.Context.Migrations
                         {
                             ProductCode = 25L,
                             CategoryCode = 5L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4210),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4330),
                             ProductName = "Modeller İçin Yapıştırıcı",
                             ProductPrice = 55m,
                             Status = 1,
@@ -517,7 +517,7 @@ namespace DataAccess.Context.Migrations
                         new
                         {
                             ShipperCode = 1,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4270),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4440),
                             DeliveryTime = "1-2 gün",
                             Price = 15.99m,
                             ShipperName = "Aras Kargo",
@@ -526,7 +526,7 @@ namespace DataAccess.Context.Migrations
                         new
                         {
                             ShipperCode = 2,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4270),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4450),
                             DeliveryTime = "2-3 gün",
                             Price = 12.50m,
                             ShipperName = "Yurtiçi Kargo",
@@ -535,7 +535,7 @@ namespace DataAccess.Context.Migrations
                         new
                         {
                             ShipperCode = 3,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4280),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4450),
                             DeliveryTime = "1 gün",
                             Price = 20.00m,
                             ShipperName = "Kolay Gelsin",
@@ -544,7 +544,7 @@ namespace DataAccess.Context.Migrations
                         new
                         {
                             ShipperCode = 4,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4280),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4450),
                             DeliveryTime = "3-5 days",
                             Price = 10.75m,
                             ShipperName = "MNG Kargo",
@@ -553,7 +553,7 @@ namespace DataAccess.Context.Migrations
                         new
                         {
                             ShipperCode = 5,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4280),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4450),
                             DeliveryTime = "5-7 gün",
                             Price = 25.00m,
                             ShipperName = "Ptt Kargo",
@@ -620,11 +620,11 @@ namespace DataAccess.Context.Migrations
                         new
                         {
                             UserCode = 101L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4020),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4050),
                             Email = "john.doe@example.com",
                             MobilePhone = "+905551234567",
-                            PasswordHash = new byte[] { 199, 198, 132, 1, 150, 179, 129, 237, 161, 0, 77, 66, 124, 198, 87, 254, 84, 209, 65, 50, 12, 188, 110, 189, 249, 247, 153, 192, 75, 227, 36, 4, 37, 251, 126, 69, 193, 110, 27, 105, 60, 169, 233, 182, 146, 98, 163, 210, 23, 59, 72, 68, 195, 133, 178, 136, 113, 44, 90, 192, 0, 183, 117, 180 },
-                            PasswordSalt = new byte[] { 6, 238, 169, 110, 17, 130, 20, 182, 48, 45, 231, 193, 220, 81, 94, 97 },
+                            PasswordHash = new byte[] { 167, 166, 187, 223, 23, 173, 220, 47, 30, 165, 32, 6, 181, 80, 148, 37, 86, 195, 197, 111, 119, 80, 223, 113, 94, 254, 149, 244, 137, 130, 151, 156, 187, 81, 77, 141, 107, 154, 214, 195, 159, 73, 128, 77, 173, 21, 170, 144, 198, 178, 165, 41, 8, 64, 100, 89, 227, 192, 48, 170, 240, 129, 248, 229 },
+                            PasswordSalt = new byte[] { 173, 229, 153, 42, 60, 171, 120, 249, 48, 255, 95, 2, 67, 191, 197, 240 },
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserRoleCode = 1L
@@ -632,11 +632,11 @@ namespace DataAccess.Context.Migrations
                         new
                         {
                             UserCode = 102L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4020),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4060),
                             Email = "jane.doe@example.com",
                             MobilePhone = "+905551234568",
-                            PasswordHash = new byte[] { 199, 198, 132, 1, 150, 179, 129, 237, 161, 0, 77, 66, 124, 198, 87, 254, 84, 209, 65, 50, 12, 188, 110, 189, 249, 247, 153, 192, 75, 227, 36, 4, 37, 251, 126, 69, 193, 110, 27, 105, 60, 169, 233, 182, 146, 98, 163, 210, 23, 59, 72, 68, 195, 133, 178, 136, 113, 44, 90, 192, 0, 183, 117, 180 },
-                            PasswordSalt = new byte[] { 6, 238, 169, 110, 17, 130, 20, 182, 48, 45, 231, 193, 220, 81, 94, 97 },
+                            PasswordHash = new byte[] { 167, 166, 187, 223, 23, 173, 220, 47, 30, 165, 32, 6, 181, 80, 148, 37, 86, 195, 197, 111, 119, 80, 223, 113, 94, 254, 149, 244, 137, 130, 151, 156, 187, 81, 77, 141, 107, 154, 214, 195, 159, 73, 128, 77, 173, 21, 170, 144, 198, 178, 165, 41, 8, 64, 100, 89, 227, 192, 48, 170, 240, 129, 248, 229 },
+                            PasswordSalt = new byte[] { 173, 229, 153, 42, 60, 171, 120, 249, 48, 255, 95, 2, 67, 191, 197, 240 },
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserRoleCode = 2L
@@ -644,11 +644,11 @@ namespace DataAccess.Context.Migrations
                         new
                         {
                             UserCode = 103L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4020),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4060),
                             Email = "alice.smith@example.com",
                             MobilePhone = "+905551234569",
-                            PasswordHash = new byte[] { 199, 198, 132, 1, 150, 179, 129, 237, 161, 0, 77, 66, 124, 198, 87, 254, 84, 209, 65, 50, 12, 188, 110, 189, 249, 247, 153, 192, 75, 227, 36, 4, 37, 251, 126, 69, 193, 110, 27, 105, 60, 169, 233, 182, 146, 98, 163, 210, 23, 59, 72, 68, 195, 133, 178, 136, 113, 44, 90, 192, 0, 183, 117, 180 },
-                            PasswordSalt = new byte[] { 6, 238, 169, 110, 17, 130, 20, 182, 48, 45, 231, 193, 220, 81, 94, 97 },
+                            PasswordHash = new byte[] { 167, 166, 187, 223, 23, 173, 220, 47, 30, 165, 32, 6, 181, 80, 148, 37, 86, 195, 197, 111, 119, 80, 223, 113, 94, 254, 149, 244, 137, 130, 151, 156, 187, 81, 77, 141, 107, 154, 214, 195, 159, 73, 128, 77, 173, 21, 170, 144, 198, 178, 165, 41, 8, 64, 100, 89, 227, 192, 48, 170, 240, 129, 248, 229 },
+                            PasswordSalt = new byte[] { 173, 229, 153, 42, 60, 171, 120, 249, 48, 255, 95, 2, 67, 191, 197, 240 },
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserRoleCode = 3L
@@ -656,11 +656,11 @@ namespace DataAccess.Context.Migrations
                         new
                         {
                             UserCode = 104L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4030),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4070),
                             Email = "bob.johnson@example.com",
                             MobilePhone = "+905551234570",
-                            PasswordHash = new byte[] { 199, 198, 132, 1, 150, 179, 129, 237, 161, 0, 77, 66, 124, 198, 87, 254, 84, 209, 65, 50, 12, 188, 110, 189, 249, 247, 153, 192, 75, 227, 36, 4, 37, 251, 126, 69, 193, 110, 27, 105, 60, 169, 233, 182, 146, 98, 163, 210, 23, 59, 72, 68, 195, 133, 178, 136, 113, 44, 90, 192, 0, 183, 117, 180 },
-                            PasswordSalt = new byte[] { 6, 238, 169, 110, 17, 130, 20, 182, 48, 45, 231, 193, 220, 81, 94, 97 },
+                            PasswordHash = new byte[] { 167, 166, 187, 223, 23, 173, 220, 47, 30, 165, 32, 6, 181, 80, 148, 37, 86, 195, 197, 111, 119, 80, 223, 113, 94, 254, 149, 244, 137, 130, 151, 156, 187, 81, 77, 141, 107, 154, 214, 195, 159, 73, 128, 77, 173, 21, 170, 144, 198, 178, 165, 41, 8, 64, 100, 89, 227, 192, 48, 170, 240, 129, 248, 229 },
+                            PasswordSalt = new byte[] { 173, 229, 153, 42, 60, 171, 120, 249, 48, 255, 95, 2, 67, 191, 197, 240 },
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserRoleCode = 3L
@@ -668,11 +668,11 @@ namespace DataAccess.Context.Migrations
                         new
                         {
                             UserCode = 105L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(4030),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(4070),
                             Email = "carol.davis@example.com",
                             MobilePhone = "+905551234571",
-                            PasswordHash = new byte[] { 199, 198, 132, 1, 150, 179, 129, 237, 161, 0, 77, 66, 124, 198, 87, 254, 84, 209, 65, 50, 12, 188, 110, 189, 249, 247, 153, 192, 75, 227, 36, 4, 37, 251, 126, 69, 193, 110, 27, 105, 60, 169, 233, 182, 146, 98, 163, 210, 23, 59, 72, 68, 195, 133, 178, 136, 113, 44, 90, 192, 0, 183, 117, 180 },
-                            PasswordSalt = new byte[] { 6, 238, 169, 110, 17, 130, 20, 182, 48, 45, 231, 193, 220, 81, 94, 97 },
+                            PasswordHash = new byte[] { 167, 166, 187, 223, 23, 173, 220, 47, 30, 165, 32, 6, 181, 80, 148, 37, 86, 195, 197, 111, 119, 80, 223, 113, 94, 254, 149, 244, 137, 130, 151, 156, 187, 81, 77, 141, 107, 154, 214, 195, 159, 73, 128, 77, 173, 21, 170, 144, 198, 178, 165, 41, 8, 64, 100, 89, 227, 192, 48, 170, 240, 129, 248, 229 },
+                            PasswordSalt = new byte[] { 173, 229, 153, 42, 60, 171, 120, 249, 48, 255, 95, 2, 67, 191, 197, 240 },
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserRoleCode = 3L
@@ -747,7 +747,7 @@ namespace DataAccess.Context.Migrations
                         {
                             UserDetailCode = 1L,
                             BirthDate = new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(3390),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(2910),
                             Email = "ahmet.yilmaz@kirtasiyemerkezi.com",
                             IdentityNumber = "98765432101",
                             MobilePhone = "+905551234567",
@@ -760,7 +760,7 @@ namespace DataAccess.Context.Migrations
                         {
                             UserDetailCode = 2L,
                             BirthDate = new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(3430),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(2990),
                             Email = "mehmet.demir@ofismalzemeleri.com",
                             IdentityNumber = "98765432102",
                             MobilePhone = "+905551234568",
@@ -773,7 +773,7 @@ namespace DataAccess.Context.Migrations
                         {
                             UserDetailCode = 3L,
                             BirthDate = new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(3430),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(2990),
                             Email = "ayse.kaya@kirtasiyedunyasi.com",
                             IdentityNumber = "98765432103",
                             MobilePhone = "+905551234569",
@@ -786,7 +786,7 @@ namespace DataAccess.Context.Migrations
                         {
                             UserDetailCode = 4L,
                             BirthDate = new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(3430),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(2990),
                             Email = "ali.celik@ofismerkezi.com",
                             IdentityNumber = "98765432104",
                             MobilePhone = "+905551234570",
@@ -799,7 +799,7 @@ namespace DataAccess.Context.Migrations
                         {
                             UserDetailCode = 5L,
                             BirthDate = new DateTime(1990, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(3440),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(3000),
                             Email = "fatma.yurt@kirtasiyevi.com",
                             IdentityNumber = "98765432105",
                             MobilePhone = "+905551234571",
@@ -834,12 +834,7 @@ namespace DataAccess.Context.Migrations
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("timestamp without time zone");
 
-                    b.Property<long?>("UserCode")
-                        .HasColumnType("bigint");
-
                     b.HasKey("UserRoleCode");
-
-                    b.HasIndex("UserCode");
 
                     b.ToTable("UserRole");
 
@@ -847,21 +842,21 @@ namespace DataAccess.Context.Migrations
                         new
                         {
                             UserRoleCode = 1L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(3550),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(3170),
                             RoleDescription = "Admin",
                             Status = 1
                         },
                         new
                         {
                             UserRoleCode = 2L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(3550),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(3170),
                             RoleDescription = "Yönetici",
                             Status = 1
                         },
                         new
                         {
                             UserRoleCode = 3L,
-                            CreatedDate = new DateTime(2024, 10, 17, 16, 15, 14, 88, DateTimeKind.Local).AddTicks(3550),
+                            CreatedDate = new DateTime(2024, 10, 23, 16, 15, 31, 282, DateTimeKind.Local).AddTicks(3170),
                             RoleDescription = "Kullanici",
                             Status = 1
                         });
@@ -894,7 +889,15 @@ namespace DataAccess.Context.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Entities.Concrete.Product", "Products")
+                        .WithMany()
+                        .HasForeignKey("ProductCode")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Order");
+
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("Entities.Concrete.Product", b =>
@@ -904,10 +907,6 @@ namespace DataAccess.Context.Migrations
                         .HasForeignKey("CategoryCode")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("Entities.Concrete.OrderDetail", null)
-                        .WithMany("Products")
-                        .HasForeignKey("OrderDetailCode");
 
                     b.HasOne("Entities.Concrete.Shipper", null)
                         .WithMany("Products")
@@ -938,18 +937,6 @@ namespace DataAccess.Context.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Entities.Entites.Concrete.UserRole", b =>
-                {
-                    b.HasOne("Entities.Entites.Concrete.User", null)
-                        .WithMany("UserRoles")
-                        .HasForeignKey("UserCode");
-                });
-
-            modelBuilder.Entity("Entities.Concrete.OrderDetail", b =>
-                {
-                    b.Navigation("Products");
-                });
-
             modelBuilder.Entity("Entities.Concrete.Shipper", b =>
                 {
                     b.Navigation("Orders");
@@ -961,8 +948,6 @@ namespace DataAccess.Context.Migrations
                 {
                     b.Navigation("UserDetail")
                         .IsRequired();
-
-                    b.Navigation("UserRoles");
                 });
 
             modelBuilder.Entity("Entities.Entites.Concrete.UserRole", b =>

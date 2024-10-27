@@ -46,6 +46,19 @@ namespace Business.AutoMapper
             CreateMap<Product, GetAllProductDto>().ReverseMap();
 
             CreateMap<Shipper, GetAllShipperDto>().ReverseMap();
+            
+            CreateMap<Order, CreateOrderDto>()
+                .ForMember(dest => dest.OrderDate, opt=> opt.MapFrom(src =>src.OrderDate))
+                .ForMember(dest => dest.UserCode, opt=> opt.MapFrom(src =>src.UserCode))
+                .ForMember(dest => dest.ShipperCode, opt=> opt.MapFrom(src =>src.ShipperCode))
+                .ReverseMap();
+            
+            
+            
+            CreateMap<OrderDetail, CreateOrderDetailDto>().ReverseMap();
+            CreateMap<Order, GetOrderDto>().ReverseMap();
+            CreateMap<Product, GetProductDto>().ReverseMap();
+            CreateMap<Product, GetAllProductDto>().ReverseMap();
         }
     }
 }
