@@ -19,6 +19,28 @@ namespace DataAccess.SeedData
             builder.HasData(
                 new User
                 {
+                    UserCode = 1002,
+                    Email = "yavuzbugraalkan@gmail.com",
+                    MobilePhone = "+905321391090",
+                    PasswordHash = hash,
+                    PasswordSalt = salt,
+                    UserRoleCode = 1,
+                    TwoFactorEnabled = false
+
+                },
+                new User
+                {
+                    UserCode = 1001,
+                    Email = "danismazismail@gmail.com",
+                    MobilePhone = "+905321391095",
+                    PasswordHash = hash,
+                    PasswordSalt = salt,
+                    UserRoleCode = 3,
+                    TwoFactorEnabled = false
+
+                },
+                new User
+                {
                     UserCode = 101,
                     Email = "john.doe@example.com",
                     MobilePhone = "+905551234567",

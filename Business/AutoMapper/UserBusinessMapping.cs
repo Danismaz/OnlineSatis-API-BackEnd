@@ -59,6 +59,14 @@ namespace Business.AutoMapper
             CreateMap<Order, GetOrderDto>().ReverseMap();
             CreateMap<Product, GetProductDto>().ReverseMap();
             CreateMap<Product, GetAllProductDto>().ReverseMap();
+            
+            CreateMap<Category, GetAllCategoryDto>().ReverseMap();
+            CreateMap<Category, CreateCategoryDto>().ReverseMap();
+            CreateMap<Category, UpdateCategoryDto>().ReverseMap();
+            CreateMap<Product, GetProductsDto>().ReverseMap();
+            CreateMap<Product, CreateProductDto>().ReverseMap();
+            CreateMap<Product, UpdateProductDto>().ReverseMap();
+            CreateMap<Product, DeleteProductDto>().ReverseMap();
         }
     }
 }

@@ -18,6 +18,28 @@ namespace DataAccess.SeedData
             builder.HasData(
                 new UserDetail
                 {
+                    UserDetailCode = 102,
+                    UserCode = 1002,
+                    Name = "yavuz bugra",
+                    Surname = "alkan",
+                    IdentityNumber = "98765432555",
+                    MobilePhone = "+905321391090",
+                    Email = "yavuzbugraalkan@gmail.com",
+                    BirthDate = new DateTime(1990, 6, 10)
+                },
+                new UserDetail
+                {
+                    UserDetailCode = 101,
+                    UserCode = 1001,
+                    Name = "ismail",
+                    Surname = "danışmaz",
+                    IdentityNumber = "98765432333",
+                    MobilePhone = "+905321391095",
+                    Email = "danismazismail@gmail.com",
+                    BirthDate = new DateTime(1990, 6, 10)
+                },
+                new UserDetail
+                {
                     UserDetailCode = 1,
                     UserCode = 101,
                     Name = "Ahmet",
