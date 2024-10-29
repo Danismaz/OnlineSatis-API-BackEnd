@@ -62,7 +62,7 @@ namespace KYSProjectApi.Controllers.Auth
                     TwoFactorRequired = true,
                     UserRole = userDto.UserRoleCode,
                     Message = "Doğrulama kodu gönderildi.",
-                    userDto.Email, // E-posta adresini de döndür
+                    userDto.Email, 
                     Data = "" 
                 });
             }
