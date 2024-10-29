@@ -246,7 +246,7 @@ namespace KYSProjectApi.Controllers.Auth
 
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost("reset-password")]
-        public async Task<IActionResult> ResetPassword(UserForResetPasswordVm model)
+        public async Task<IActionResult> ResetPassword([FromBody] UserForResetPasswordVm model)
         {
             // Gelen Authorization başlığından token'ı al
             var token = HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();

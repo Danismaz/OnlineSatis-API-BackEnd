@@ -41,7 +41,7 @@ namespace KYSProjectApi.Services.Token
                 issuer: _configuration["Token:Issuer"],
                 audience: _configuration["Token:Audience"],
                 claims: claim,
-                expires: DateTime.Now.AddMinutes(15),
+                expires: DateTime.Now.AddHours(1),
                 notBefore: DateTime.Now,
                 signingCredentials: creds
             );
