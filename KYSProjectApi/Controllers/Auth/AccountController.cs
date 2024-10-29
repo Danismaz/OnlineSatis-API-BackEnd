@@ -60,6 +60,7 @@ namespace KYSProjectApi.Controllers.Auth
                 return Ok(new
                 {
                     TwoFactorRequired = true,
+                    UserRole = userDto.UserRoleCode,
                     Message = "Doğrulama kodu gönderildi.",
                     userDto.Email, // E-posta adresini de döndür
                     Data = "" // Data özelliği, burada `null` olabilir
@@ -70,9 +71,10 @@ namespace KYSProjectApi.Controllers.Auth
             var token = await tokenService.GenerateTokenAsync(model.Email);
 
             // Token'ı istemciye döndür
-            return Ok(new Response<string>
+            return Ok(new 
             {
                 StatusCode = 200,
+                UserRole = userDto.UserRoleCode,
                 Message = "Giriş başarılı",
                 Data = token
             });

@@ -13,5 +13,6 @@ namespace DataTransfer.Concrete
         public string Email { get; init; }
         public string Password { get; init; }
         public bool TwoFactorEnabled { get; init; }
+        public Int64 UserRoleCode { get; set; }
     }
 }
