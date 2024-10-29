@@ -63,7 +63,7 @@ namespace KYSProjectApi.Controllers.Auth
                     UserRole = userDto.UserRoleCode,
                     Message = "Doğrulama kodu gönderildi.",
                     userDto.Email, // E-posta adresini de döndür
-                    Data = "" // Data özelliği, burada `null` olabilir
+                    Data = "" 
                 });
             }
 
